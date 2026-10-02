@@ -243,7 +243,7 @@ const curveFacts=D.curves.map(c=>{const p=c.points.slice().sort((a,b)=>yf(a.date
 
 const cap=v=>v.charAt(0).toUpperCase()+v.slice(1);
 {const yrsOf=n=>D.households.items.find(i=>i.name===n).years;
- $('#preamble').innerHTML=`<p>We made this in October 2026, when new AI models arrive every few weeks and it can feel like everything is changing at once. To test that feeling, we looked back 100 years and measured two things: how fast new technology reached people, and how fast the capabilities underneath it improved.</p>
+ $('#preamble').innerHTML=`<p>Let's take a look at October 2026. New AI models arrive every few weeks, and it can feel like everything is changing at once. To test that feeling, this page goes back 100 years and measures two things: how fast new technology reached people, and how fast the capabilities underneath it improved.</p>
  <p>The answer is mixed. Reach has collapsed: ${esc(first.lower)} took <b>${esc(first.label)}</b> to reach 100 million people, and ${esc(anchor.lower)} took <b>${esc(anchor.label)}</b>. AI capability now doubles about every <b>${esc(D.ai.horizon.headline)}</b>. Yet radio spread through American homes in ${yrsOf('Radio')} years, about as fast as the cell phone (${yrsOf('Cell phone')}), and some economists argue the deepest changes to daily life came before 1970.</p>`;}
 
 $('#adoption-dek').textContent=`Measured worldwide. Each line runs from public launch to 100 million users. The telephone row starts off the chart, in ${first.launchYear}.`;
