@@ -8,17 +8,19 @@ Download or clone the repo and open `index.html` in a browser. It is fully self-
 
 ## What it shows
 
-1. **From 1 in 10 homes to 8 in 10.** Years for 10 technologies to spread through US households, from the landline (59 years) to social media (11). Radio, in the 1930s, was about as fast as the cell phone.
-2. **Time to 100 million users.** 14 technologies worldwide, from the telephone (about 75 years) through the iPhone and Android to Threads (5 days). Each row keeps the measure its source reports.
-3. **Six measured trends,** with a linear/log toggle:
+It opens with a short preamble: does innovation really feel faster in 2026 than it was, and what does a century of data say?
+
+1. **Milestones.** 60 landmarks from 1926 to 2026, each with a primary source. These give context; the charts are the evidence.
+2. **From 1 in 10 homes to 8 in 10.** Years for 10 technologies to spread through US households, from the landline (59 years) to social media (11). Radio, in the 1930s, was about as fast as the cell phone.
+3. **Time to 100 million users.** 14 technologies worldwide, from the telephone (about 75 years) through the iPhone and Android to Threads (5 days). Each row keeps the measure its source reports.
+4. **Six measured trends,** with a linear/log toggle:
    - AI training compute since 1950
    - transistors per chip since 1971
    - genome sequencing cost since 2001
    - solar module price since 1975
    - objects launched into space per year since 1957
    - electric share of new car sales since 2010
-4. **The road to large language models.** METR's time horizon, the length of task (in human working time) that AI models complete half the time, for 40 models from 2019 to 2026. It doubles about every 4 months since 2023. Below it, 22 steps from Turing (1950) to today.
-5. **Milestones.** 60 landmarks from 1926 to 2026, each with a primary source. These give context; the charts are the evidence.
+5. **The road to large language models.** METR's time horizon, the length of task (in human working time) that AI models complete half the time, for 40 models from 2019 to 2026. It doubles about every 4 months since 2023. Below it, 22 steps from Turing (1950) to today.
 6. **Caveats.** What the data can and cannot support.
 
 ## Data sources

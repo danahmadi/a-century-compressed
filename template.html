@@ -16,11 +16,14 @@ a{color:var(--accent);text-underline-offset:3px}
 button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 32px}
-header.hero{padding:80px 0 64px}
+header.hero{padding:80px 0 36px}
 h1{font-weight:650;font-size:clamp(40px,5.6vw,68px);line-height:1.04;letter-spacing:-.035em;margin:0 0 22px}
 .lede{font-size:clamp(18px,1.9vw,21px);line-height:1.5;color:var(--sub);max-width:34em;margin:0}
 .lede b{color:var(--ink);font-weight:600}
 section.block{border-top:1px solid var(--line);padding:64px 0}
+.preamble{padding:0 0 56px;max-width:66ch}
+.preamble p{font-size:17px;line-height:1.65;color:var(--sub);margin:0 0 14px}
+.preamble b{color:var(--ink);font-weight:600}
 h2{font-weight:650;font-size:clamp(26px,3vw,34px);line-height:1.15;letter-spacing:-.025em;margin:0 0 10px}
 .dek{color:var(--sub);max-width:62ch;margin:0 0 28px}
 .chart{width:100%;position:relative}
@@ -127,8 +130,18 @@ footer{border-top:1px solid var(--line);padding:28px 0 60px;font-size:12.5px;col
 <div class="wrap">
 <header class="hero">
   <h1>A century, compressed.</h1>
-  <p class="lede" id="lede"></p>
+  <p class="lede">It feels like innovation is moving at breakneck speed. Is it? Here is a century of evidence.</p>
 </header>
+
+<section class="preamble" aria-label="About this page" id="preamble"></section>
+
+<section class="block" aria-labelledby="milestones-title">
+  <h2 id="milestones-title">Milestones</h2>
+  <p class="dek" id="milestones-dek"></p>
+  <div class="strip" id="strip"></div>
+  <div class="card" id="mcard" aria-live="polite"></div>
+  <details><summary>All milestones as a list</summary><ol class="mlist" id="mlist"></ol></details>
+</section>
 
 <section class="block" aria-labelledby="homes-title">
   <h2 id="homes-title">From 1 in 10 homes to 8 in 10</h2>
@@ -160,13 +173,6 @@ footer{border-top:1px solid var(--line);padding:28px 0 60px;font-size:12.5px;col
   <div class="eras" id="eras"></div>
 </section>
 
-<section class="block" aria-labelledby="milestones-title">
-  <h2 id="milestones-title">Milestones</h2>
-  <p class="dek" id="milestones-dek"></p>
-  <div class="strip" id="strip"></div>
-  <div class="card" id="mcard" aria-live="polite"></div>
-  <details><summary>All milestones as a list</summary><ol class="mlist" id="mlist"></ol></details>
-</section>
 
 <section class="block" aria-labelledby="honest-title">
   <h2 id="honest-title">Caveats</h2>
@@ -236,7 +242,9 @@ const curveFacts=D.curves.map(c=>{const p=c.points.slice().sort((a,b)=>yf(a.date
   return {c,a,b,ratio:c.dir==='up'?b.value/a.value:a.value/b.value};});
 
 const cap=v=>v.charAt(0).toUpperCase()+v.slice(1);
-$('#lede').innerHTML=`${esc(cap(first.lower))} took <b>${esc(first.label.replace('about ',''))}</b> to reach 100 million people. ${esc(cap(anchor.lower))} took <b>${esc(anchor.label)}</b>.`;
+{const yrsOf=n=>D.households.items.find(i=>i.name===n).years;
+ $('#preamble').innerHTML=`<p>We made this in October 2026, when new AI models arrive every few weeks and it can feel like everything is changing at once. To test that feeling, we looked back 100 years and measured two things: how fast new technology reached people, and how fast the capabilities underneath it improved.</p>
+ <p>The answer is mixed. Reach has collapsed: ${esc(first.lower)} took <b>${esc(first.label)}</b> to reach 100 million people, and ${esc(anchor.lower)} took <b>${esc(anchor.label)}</b>. AI capability now doubles about every <b>${esc(D.ai.horizon.headline)}</b>. Yet radio spread through American homes in ${yrsOf('Radio')} years, about as fast as the cell phone (${yrsOf('Cell phone')}), and some economists argue the deepest changes to daily life came before 1970.</p>`;}
 
 $('#adoption-dek').textContent=`Measured worldwide. Each line runs from public launch to 100 million users. The telephone row starts off the chart, in ${first.launchYear}.`;
 $('#adoption-note').textContent=D.adoption.note;
@@ -336,7 +344,7 @@ $('#eras').innerHTML=AI.eras.map(e=>{const items=AI.milestones.filter(m=>m.era==
 const DOMAINS=D.domains;
 const M=D.milestones.slice().sort((a,b)=>yf(a.date)-yf(b.date));
 let selected=M.length-1;
-$('#milestones-dek').textContent=`${M.length} landmarks from 1926 to today, each with a primary source. The selection is subjective; the charts above are the evidence.`;
+$('#milestones-dek').textContent=`${M.length} landmarks from 1926 to today, each with a primary source. The selection is subjective; the charts below are the evidence.`;
 const dlabel=id=>DOMAINS.find(d=>d.id===id).label;
 function select(i,focus){selected=i;const m=M[i];
   $('#mcard').innerHTML=`<div><div class="when">${esc(dateLabel(m.date))}</div><div class="dom">${esc(dlabel(m.domain))}</div></div><div><h3>${esc(m.title)}</h3><p>${esc(m.line)}</p><span class="src">Source: ${esc(m.source.publisher)}, <a href="${esc(m.source.url)}" target="_blank" rel="noopener noreferrer">${esc(m.source.title)}</a></span></div>`;
