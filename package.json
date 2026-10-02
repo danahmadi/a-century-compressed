@@ -1,0 +1,12 @@
+{
+  "name": "a-century-compressed",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
