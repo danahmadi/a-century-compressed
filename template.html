@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Is innovation really accelerating? A sourced look at how fast technology reached people from 1926 to 2026, with measured trends in AI, chips, genomics, solar, space and electric cars.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src 'self'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'">
 <title>A Century, Compressed</title>
 <meta property="og:type" content="website">
 <meta property="og:title" content="A Century, Compressed">
@@ -419,5 +419,8 @@ $('#footer').innerHTML='Crafted by <a href="https://x.com/Dan_Ahmadi" target="_b
 function drawAll(){drawSpans('#homes-chart',homeRows);drawSpans('#adoption-chart',userRows);drawCurves();drawStrip();}
 let frame,lastW=0;new ResizeObserver(()=>{const w=document.body.clientWidth;if(w===lastW)return;lastW=w;cancelAnimationFrame(frame);frame=requestAnimationFrame(drawAll);}).observe(document.body);
 </script>
+<!-- Vercel Web Analytics: cookieless page-view counts, served from this site's own domain. Inactive offline or when opened as a file. -->
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments);};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ An interactive, single-file visualization of how fast technology has reached peo
 
 ## View it
 
-Live at **[a-century-compressed.vercel.app](https://a-century-compressed.vercel.app/)**. Or clone the repo and open `index.html` in a browser. It is fully self-contained and works offline; source links need the internet. Add `#log` to the URL to open the trend charts on a log scale.
+Live at **[a-century-compressed.vercel.app](https://a-century-compressed.vercel.app/)**. Or clone the repo and open `index.html` in a browser. It is fully self-contained and works offline; source links need the internet. The live site uses Vercel Web Analytics for cookieless page-view counts; it is inactive when you open the file locally. Add `#log` to the URL to open the trend charts on a log scale.
 
 ## What it shows
 
