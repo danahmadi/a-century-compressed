@@ -333,7 +333,7 @@ for(const m of M)all.set(m.source.url,m.source);
 all.set(D.adoption.reference.source.url,D.adoption.reference.source);
 $('#sources-summary').textContent=`Sources (${all.size})`;
 $('#sources').innerHTML=[...all.values()].map(s=>`<li>${esc(s.publisher)}, <a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.title)}</a></li>`).join('');
-$('#footer').textContent=`By Dan Ahmadi, built with Craft Agent. Data checked ${dateLabel(D.cutoff)}. Works offline; source links need the internet. Figures are as reported by the cited sources, several of which are estimates.`;
+$('#footer').innerHTML='Crafted by <a href="https://x.com/Dan_Ahmadi" target="_blank" rel="noopener noreferrer">Dan Ahmadi</a> as an <a href="https://github.com/danahmadi/a-century-compressed" target="_blank" rel="noopener noreferrer">open source project</a>.';
 
 function drawAll(){drawAdoption();drawCurves();drawStrip();}
 let frame,lastW=0;new ResizeObserver(()=>{const w=document.body.clientWidth;if(w===lastW)return;lastW=w;cancelAnimationFrame(frame);frame=requestAnimationFrame(drawAll);}).observe(document.body);
