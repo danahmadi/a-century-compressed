@@ -49,6 +49,16 @@ node build.mjs   # inlines data.json into template.html to produce index.html
 node check.mjs   # validates dates and https sources, offline safety and build freshness
 ```
 
+`build.mjs` also writes `llms.txt`, a plain-text summary of every finding and source for language models, following the [llms.txt](https://llmstxt.org) convention.
+
+The social preview image `og.png` is generated from the same data:
+
+```sh
+node og/render.mjs   # writes og/card.html
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --hide-scrollbars \
+  --force-device-scale-factor=1 --window-size=1200,630 --screenshot="$PWD/og.png" "file://$PWD/og/card.html"
+```
+
 `data.json` holds the data and `template.html` the page. `v1-50-years/` keeps the earlier 1976 to 2026 version.
 
 ## Known limits

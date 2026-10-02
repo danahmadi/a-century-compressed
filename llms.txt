@@ -1,0 +1,151 @@
+# A Century, Compressed
+
+> An open source, sourced visualization asking whether innovation is really accelerating, using 100 years of data (1926 to 2026). Data checked 2026-10-01. Crafted by Dan Ahmadi (https://x.com/Dan_Ahmadi).
+
+Short answer: some things are accelerating and some are not. The telephone took about 75 years to reach 100 million people; ChatGPT took about 2 months. AI task-completion horizons double about every 4 months (METR). But radio went from 10% to 80% of US homes in 14 years, about as fast as the cell phone (15), and economist Robert Gordon argues the deepest changes to daily life came between 1870 and 1970.
+
+## Files
+
+- [Interactive page](https://raw.githubusercontent.com/danahmadi/a-century-compressed/main/index.html): single self-contained HTML file; download and open in a browser
+- [All data](https://raw.githubusercontent.com/danahmadi/a-century-compressed/main/data.json): every number, date, caveat and source URL used on the page
+- [README](https://github.com/danahmadi/a-century-compressed#readme): what the page shows, how to rebuild it, known limits
+
+## Years from 10% to 80% of US households (Comin and Hobijn via Our World in Data)
+
+- Landline telephone: 59 years (1903 to 1962)
+- Electricity: 33 years (1908 to 1941)
+- Car: 55 years (1915 to 1970)
+- Radio: 14 years (1925 to 1939)
+- Refrigerator: 20 years (1929 to 1949)
+- Color TV: 15 years (1966 to 1981)
+- Microwave: 11 years (1981 to 1991)
+- Internet: 19 years (1993 to 2012)
+- Cell phone: 15 years (1994 to 2009)
+- Social media: 11 years (2006 to 2017)
+
+## Time to 100 million users, worldwide
+
+- Telephone (launched 1876): about 75 years to 100 million. Measure: Telephones in service worldwide, an estimate.
+- Mobile phone (launched 1979): about 16 years to 100 million. Measure: Mobile subscriptions worldwide (ITU), counted from NTT's 1979 Tokyo service.
+- Internet and the Web (launched 1991): about 6.5 years to 100 million. Measure: Estimated internet users worldwide, counted from the Web going public.
+- iTunes Store (launched 2003): about 6.5 years to 100 million. Measure: iTunes Store accounts.
+- Facebook (launched 2004): about 4.5 years to 100 million. Measure: Active users, company-reported.
+- YouTube (launched 2005): about 1 year to 100 million. Measure: Worldwide monthly unique visitors (comScore).
+- Twitter (launched 2006): about 5 years to 100 million. Measure: Monthly active users.
+- iPhone (launched 2007): about 3.7 years to 100 million. Measure: Cumulative iPhones shipped, announced by Steve Jobs on March 2, 2011.
+- Android (launched 2008): about 2.5 years to 100 million. Measure: Cumulative Android device activations, announced at Google I/O on May 10, 2011.
+- Instagram (launched 2010): about 2.4 years to 100 million. Measure: Monthly active users, company-announced.
+- Pokémon Go (launched 2016): about 25 days to 100 million. Measure: App installs on iOS and Google Play (App Annie).
+- TikTok (launched 2017): about 9 months to 100 million. Measure: Monthly active users (UBS estimate), counted from the international launch.
+- ChatGPT (launched 2022): about 2 months to 100 million. Measure: Estimated monthly active users (UBS, from Similarweb web traffic).
+- Threads (launched 2023): 5 days to 100 million. Measure: Sign-ups.
+
+## Measured trends
+
+- Compute used to train landmark AI systems (Floating-point operations (FLOP) per training run). From 2012 to 2026. Here the growth rate itself increased. From Shannon's 1950 maze mouse to about 2010, training compute doubled roughly every 20 months, close to Moore's law. Since then it has doubled roughly every 6 months. Sources: https://epoch.ai/data/notable-ai-models, https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year, https://epoch.ai/blog/compute-trends
+- Transistors on a single chip (Count per processor; recent entries are multi-die packages). From 1971 to 2026. Moore's law: doubling about every two years for five decades, a near-straight line on the log scale. The largest recent chips join two or more dies in one package. Cerebras WSE-3 (2024), a whole wafer, holds 4 trillion and is not plotted. Sources: https://en.wikipedia.org/wiki/Transistor_count, https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/, https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/
+- Cost to sequence a human genome (US dollars per genome, NHGRI production cost). From 2001 to 2022. The drop in 2008 is the switch to next-generation sequencing, when costs fell far faster than Moore's law. NHGRI's series stops in 2022 at about $525. Vendors now claim $100 to $200 at full machine utilization. Sources: https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data
+- Price of a solar panel (Module price, constant 2025 US dollars per watt). From 1975 to 2024. Panels that cost about $130 a watt in 1975 cost about 27 cents in 2024. The decline is steady rather than sudden: the more panels the world built, the cheaper each one became. Before 2010 the series is a global estimate; after, a European market benchmark. Sources: https://ourworldindata.org/grapher/solar-pv-prices
+- Objects launched into space each year (Satellites, probes, crewed craft and station parts). From 2015 to 2025. For six decades, launches ran from a few dozen to a few hundred a year. The jump after 2019 coincides with satellite megaconstellations, led by SpaceX's Starlink, which grew from 1 million subscribers in December 2022 to 12.0 million by June 2026. Sources: https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space, https://www.sec.gov/Archives/edgar/data/0001181412/000162828026052535/spcx-20260630.htm
+- Electric share of new car sales (Battery-electric and plug-in hybrid cars, share of new sales worldwide). From 2010 to 2025. The same S-curve as earlier technologies: years of slow growth, then a fast climb. In 2025 the share was 53% in China, 28% in Europe and 10% in the United States. Sources: https://ourworldindata.org/grapher/electric-car-sales-share
+
+## AI: task length models complete 50% of the time (METR)
+
+On METR's tasks, this length doubled about every 7 months from 2019 to 2025, and about every 4 months since 2023. The tasks are software and research only, and results above 16 hours exceed what the current task suite measures reliably. Source: https://metr.org/time-horizons/, https://arxiv.org/abs/2503.14499, https://metr.org/blog/2026-1-29-time-horizon-1-1/
+
+## The road to large language models
+
+- 1950-10: Turing asks whether machines can think. Alan Turing proposed the imitation game, later called the Turing test. (https://academic.oup.com/mind/article/LIX/236/433/986238)
+- 1955-08-31: The term "artificial intelligence" is coined. McCarthy, Minsky, Rochester and Shannon proposed a 1956 summer study at Dartmouth. (https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html)
+- 1958-11: The perceptron. Frank Rosenblatt described a trainable network that learns to classify patterns from examples. (https://doi.org/10.1037/h0042519)
+- 1966-01: ELIZA, the first chatbot. Joseph Weizenbaum's MIT program held text conversations using keyword pattern matching. (https://dl.acm.org/doi/10.1145/365153.365168)
+- 1986-10-09: Backpropagation. Rumelhart, Hinton and Williams showed how to train multilayer neural networks to learn useful representations. (https://www.nature.com/articles/323533a0)
+- 1997-11: LSTM. Hochreiter and Schmidhuber introduced a recurrent network that remembers across long sequences. (https://direct.mit.edu/neco/article/9/8/1735/6109/Long-Short-Term-Memory)
+- 2012-12: AlexNet wins ImageNet. A GPU-trained neural network cut image-recognition error far below prior methods. (https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html)
+- 2013-01-16: word2vec. Google researchers learned word meanings as vectors from billions of words of text. (https://arxiv.org/abs/1301.3781)
+- 2014-09-01: Attention. Bahdanau, Cho and Bengio let translation models focus on the most relevant input words. (https://arxiv.org/abs/1409.0473)
+- 2016-03-15: AlphaGo defeats Lee Sedol. DeepMind's system combined neural networks with search to win at Go, 4 to 1. (https://deepmind.google/research/breakthroughs/alphago/)
+- 2017-06-12: The Transformer. "Attention Is All You Need" introduced the architecture behind nearly every large language model. (https://arxiv.org/abs/1706.03762)
+- 2018-06-11: GPT-1. OpenAI pre-trained a Transformer on unlabeled text, then fine-tuned it for specific tasks. (https://openai.com/index/language-unsupervised/)
+- 2020-01-23: Scaling laws. OpenAI found model quality improves predictably with more parameters, data and compute. (https://arxiv.org/abs/2001.08361)
+- 2020-05-28: GPT-3. A 175-billion-parameter model performed many tasks from a few examples in the prompt. (https://arxiv.org/abs/2005.14165)
+- 2022-03-04: Learning from human feedback. InstructGPT used human ratings to make a model follow instructions; people preferred it to GPT-3. (https://arxiv.org/abs/2203.02155)
+- 2022-11-30: ChatGPT. OpenAI released a free conversational research preview. (https://openai.com/index/chatgpt/)
+- 2023-03-14: GPT-4. A multimodal model scored near human level on many professional exams. Anthropic released Claude the same day. (https://openai.com/index/gpt-4-research/)
+- 2024-09-12: Reasoning models. OpenAI's o1 was trained to think step by step before answering. (https://openai.com/index/learning-to-reason-with-llms/)
+- 2024-10-22: AI operates a computer. Anthropic let Claude use a computer by viewing the screen, moving the cursor and typing. (https://www.anthropic.com/news/3-5-models-and-computer-use)
+- 2025-01-20: Open reasoning model. DeepSeek released R1 with open weights, reporting performance comparable to o1. (https://api-docs.deepseek.com/news/news250120)
+- 2025-07-21: Gold at the Math Olympiad. A Gemini Deep Think model scored 35 of 42, officially graded at gold-medal standard. (https://deepmind.google/discover/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/)
+- 2026-05-20: AI disproves an Erdős conjecture. An OpenAI reasoning model disproved Paul Erdős's 1946 unit distance conjecture; outside mathematicians checked the proof. (https://openai.com/index/model-disproves-discrete-geometry-conjecture/)
+
+## Milestones, 1926 to 2026
+
+- 1926-01-26: First public demonstration of television. John Logie Baird showed live moving images to members of the Royal Institution in Soho, London. (https://collection.sciencemuseumgroup.org.uk/objects/co34789/experimental-television-receiver-used-by-jl-baird-in-demonstration-made-1925-1926)
+- 1926-03-16: First liquid-fuel rocket. Robert Goddard launched a gasoline and liquid-oxygen rocket from a farm in Auburn, Massachusetts. (https://www.nasa.gov/history/95-years-ago-goddards-first-liquid-fueled-rocket/)
+- 1928-09: Penicillin discovered. Alexander Fleming noticed a mould killing the bacteria around it in a London lab dish, and named its active substance penicillin. (https://www.acs.org/education/whatischemistry/landmarks/flemingpenicillin.html)
+- 1938-12: Nuclear fission discovered. In Berlin, Otto Hahn and Fritz Strassmann found barium after bombarding uranium with neutrons: the nucleus had split. (https://www.osti.gov/opennet/manhattan-project-history/Events/1890s-1939/discovery_fission.htm)
+- 1942-03-14: First US patient saved by penicillin. Anne Miller, near death from infection in New Haven, recovered after penicillin treatment. (https://medicine.yale.edu/news-article/from-penicillin-to-phages-yales-century-long-fight-against-infection/)
+- 1946-02-14: ENIAC unveiled. The University of Pennsylvania announced ENIAC, the first general-purpose electronic computer. (https://www.engineering.upenn.edu/about/history-heritage/eniac/)
+- 1947-12-23: Transistor demonstrated. John Bardeen and Walter Brattain showed Bell Labs their point-contact transistor, the first working semiconductor amplifier. (https://www.computerhistory.org/siliconengine/invention-of-the-point-contact-transistor/)
+- 1952-05-02: First jet airliner passenger service. BOAC began the first scheduled jet passenger service with the de Havilland Comet. (https://www.rafmuseum.org.uk/research/archive-exhibitions/comet-the-worlds-first-jet-airliner/comet-enters-service/)
+- 1953-04-25: Structure of DNA published. James Watson and Francis Crick proposed the double helix in a one-page paper in Nature. (https://www.nature.com/articles/171737a0)
+- 1954-06-27: First nuclear power plant on a grid. The 5 MW Obninsk station near Moscow became the first nuclear plant to supply a power grid. (https://www.iaea.org/sites/default/files/26404794246.pdf)
+- 1955-04-12: Polio vaccine declared safe and effective. Field trials in about 1.8 million children showed Jonas Salk's vaccine was safe and effective. (https://sph.umich.edu/polio/)
+- 1957-10-04: Sputnik 1 launched. The Soviet Union launched the first artificial satellite. (https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/)
+- 1958-09-12: First integrated circuit. At Texas Instruments, Jack Kilby demonstrated a working circuit built on a single piece of germanium. (https://www.computerhistory.org/siliconengine/all-semiconductor-solid-circuit-is-demonstrated/)
+- 1960-05-16: First working laser. Theodore Maiman operated a flashlamp-pumped ruby laser at Hughes Research Laboratories in Malibu. (https://www.hrl.com/about/laser)
+- 1960-06-23: First birth control pill approved. The FDA approved Enovid as a contraceptive, the first oral birth control sold in the United States. (https://pmc.ncbi.nlm.nih.gov/articles/PMC11169152/)
+- 1961-04-12: First human in space. Yuri Gagarin made one orbit of Earth aboard Vostok 1. (https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/The_flight_of_Vostok_1)
+- 1967-12-03: First human heart transplant. Christiaan Barnard's team in Cape Town transplanted a heart into Louis Washkansky, who lived 18 days. (https://www.news.uct.ac.za/article/-2017-11-29-50th-anniversary-of-the-first-human-heart-transplant)
+- 1969-07-20: Apollo 11 lands on the Moon. Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon. (https://www.nasa.gov/mission/apollo-11/)
+- 1969-10-29: First ARPANET message. UCLA sent the first message over ARPANET, the internet's precursor, to SRI. It crashed after two letters. (https://www.lk.cs.ucla.edu/internet_first_words.html)
+- 1970: Nobel Prize for the Green Revolution. Norman Borlaug was honored for high-yield wheat that sharply raised grain output in Mexico, India and Pakistan. (https://www.nobelprize.org/prizes/peace/1970/borlaug/facts/)
+- 1971-11-15: First commercial microprocessor. Intel announced the 4004, a programmable chip with about 2,300 transistors built for a calculator maker. (https://timeline.intel.com/1971/the-first-programmable-microprocessor:-the-4004)
+- 1977-09-05: Voyager 1 launches. Launched toward the outer planets; it later became the first human-made object in interstellar space. (https://www.nasa.gov/history/45-years-ago-voyager-1-begins-its-epic-journey-to-the-outer-planets-and-beyond/)
+- 1978-07-25: First baby born through IVF. Louise Brown was born in the UK after in vitro fertilization developed by Robert Edwards and Patrick Steptoe. (https://www.nobelprize.org/prizes/medicine/2010/press-release/)
+- 1980-05-08: Smallpox declared eradicated. The World Health Assembly declared smallpox eradicated, the first human disease eliminated worldwide. (https://www.who.int/news/item/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases)
+- 1981-08-12: IBM Personal Computer announced. IBM unveiled the IBM PC in New York. Its design became the template for the personal computer industry. (https://www.ibm.com/history/personal-computer)
+- 1983: PCR invented. Kary Mullis conceived the polymerase chain reaction, a fast way to copy DNA that underpins modern genetics and diagnostics. (https://cen.acs.org/acs-news/Kary-Mullis-dies-age-74/97/web/2019/08)
+- 1983-10-13: First US commercial cellular network. Ameritech opened public cellular service in Chicago, beginning with calls from Soldier Field. (https://rcrwireless.com/20181016/opinion/readerforum/cellular-under-the-tree-in-83-the-first-commercial-cellular-call-in-america)
+- 1989-03: World Wide Web proposed at CERN. Tim Berners-Lee proposed a distributed hypertext system. The first server ran in late 1990, and the Web was made public in August 1991. (https://home.cern/science/computing/birth-web)
+- 1990-04-24: Hubble Space Telescope launches. Carried to orbit by Space Shuttle Discovery on mission STS-31. (https://www.nasa.gov/mission/sts-31/)
+- 1995-07-17: GPS fully operational. With 24 satellites in orbit, GPS was declared fully operational, giving positioning anywhere on Earth around the clock. (https://www.navcen.uscg.gov/gps-frequently-asked-questions)
+- 1995-10-06: First planet found around a Sun-like star. Michel Mayor and Didier Queloz announced 51 Pegasi b. Thousands of exoplanets have been found since. (https://www.nobelprize.org/prizes/physics/2019/popular-information/)
+- 1996-07: Combination therapy controls HIV. Researchers at the Vancouver AIDS conference showed that three-drug therapy could suppress HIV, turning a fatal disease into a manageable one. (https://www.hiv.gov/hiv-basics/overview/history/hiv-and-aids-timeline)
+- 1997-02-22: Dolly the sheep announced. The first mammal cloned from an adult cell, born at the Roslin Institute in July 1996. (https://www.nms.ac.uk/discover-catalogue/the-story-of-dolly-the-sheep)
+- 1997-05-11: Deep Blue defeats Garry Kasparov. IBM's chess computer beat the reigning world champion in a six-game match, 3.5 to 2.5. (https://www.computerhistory.org/chess/defeating-the-world-chess-champion/)
+- 1998-11-20: First International Space Station module. Zarya launched from Baikonur, beginning assembly of the station. (https://www.nasa.gov/international-space-station/zarya-module/)
+- 2003-04-14: Human Genome Project completed. The international consortium finished the human genome sequence, more than two years ahead of schedule. (https://www.genome.gov/11006929/2003-release-international-consortium-completes-hgp)
+- 2006-06-08: First HPV vaccine approved. The FDA approved Gardasil, the first vaccine against the virus types that cause most cervical cancer. (https://techtransfer.cancer.gov/about/success-stories/gardasilcervarix)
+- 2007-01-09: iPhone unveiled. Introduced at Macworld San Francisco; it went on sale that June. (https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/)
+- 2012-06-28: CRISPR-Cas9 shown to be programmable. Doudna and Charpentier's teams showed that a guide RNA can direct Cas9 to cut a chosen DNA site. (https://www.science.org/doi/10.1126/science.1225829)
+- 2012-07-04: Higgs boson discovered. CERN's ATLAS and CMS experiments announced a new particle consistent with the Higgs boson, the last undiscovered particle predicted by the Standard Model. (https://home.cern/cern-experiments-observe-particle-consistent-with-long-sought-higgs-boson/)
+- 2015-12-21: First orbital rocket booster lands. A Falcon 9 first stage flew back and landed upright after delivering 11 satellites to orbit. (https://spacenews.com/falcon-9-launches-orbcomm-satellites-first-stage-lands/)
+- 2016-02-11: Gravitational waves detected. LIGO announced it had detected ripples in spacetime from two merging black holes, a century after Einstein predicted them. (https://ligo.org/gravitational-waves-detected-100-years-after-einsteins-general-relativity/)
+- 2019-04-03: First commercial 5G networks. Carriers in South Korea launched 5G smartphone service; Verizon switched on 5G in two US cities the same day. (https://news.sktelecom.com/en/1320)
+- 2019-04-10: First image of a black hole. The Event Horizon Telescope, a planet-sized array of radio dishes, imaged the shadow of M87's black hole. (https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole)
+- 2019-05-24: First Starlink satellites launched. A Falcon 9 carried SpaceX's first 60 Starlink satellites, starting the largest satellite constellation ever built. (https://spaceflightnow.com/2019/05/24/spacexs-first-60-starlink-broadband-satellites-deployed-in-orbit/)
+- 2020-10-08: Driverless robotaxis open to the public. Waymo opened rides with no safety driver to public riders in the Phoenix suburbs. (https://waymo.com/blog/2020/10/waymo-is-opening-its-fully-driverless-service-in-phoenix/)
+- 2020-11-30: AlphaFold 2 cracks protein folding. Predicted protein structures to near-experimental accuracy; CASP organizers called the 50-year problem largely solved. (https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/)
+- 2020-12-02: First mRNA vaccine authorized. The UK authorized the Pfizer-BioNTech COVID-19 vaccine, under a year after the virus was sequenced. The FDA followed on December 11. (https://www.gov.uk/government/news/uk-medicines-regulator-gives-approval-for-first-uk-covid-19-vaccine)
+- 2021-06-04: Wegovy approved for weight management. The FDA approved weekly semaglutide for chronic weight management, the first new obesity drug approval since 2014. (https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/215256Orig1s000ltr.pdf)
+- 2021-10-06: First malaria vaccine recommended. The WHO recommended the RTS,S vaccine for children in regions with moderate to high malaria transmission. (https://www.who.int/news/item/06-10-2021-who-recommends-groundbreaking-malaria-vaccine-for-children-at-risk)
+- 2021-12-25: James Webb Space Telescope launches. Launched on an Ariane 5 from Kourou, French Guiana. (https://science.nasa.gov/missions/webb/nasas-webb-telescope-launches-to-see-first-galaxies-distant-worlds/)
+- 2022-01-07: Pig heart transplanted into a living person. University of Maryland surgeons transplanted a genetically modified pig heart into a man with terminal heart disease. (https://www.medschool.umaryland.edu/news/2022/university-of-maryland-school-of-medicine-faculty-scientists-and-clinicians-perform-historic-first-successful-transplant-of-porcine-heart-into-adult-human-with-end-stage-heart-disease.html)
+- 2022-09-26: First test of asteroid deflection. NASA's DART spacecraft struck the asteroid moonlet Dimorphos and shortened its orbit by 32 minutes. (https://www.nasa.gov/news-release/nasas-dart-mission-hits-asteroid-in-first-ever-planetary-defense-test/)
+- 2022-12-05: Fusion ignition achieved. The National Ignition Facility produced 3.15 MJ of fusion energy from 2.05 MJ of laser energy, the first lab experiment to get more out than went in. (https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition)
+- 2023-11-16: First CRISPR therapy approved. The UK approved Casgevy for sickle-cell disease and beta-thalassemia; the FDA followed on December 8. (https://www.gov.uk/government/news/mhra-authorises-world-first-gene-therapy-that-aims-to-cure-sickle-cell-disease-and-transfusion-dependent-thalassemia)
+- 2024-01: First Neuralink brain implant in a person. Neuralink implanted its N1 brain-computer interface in the first participant of its PRIME study. (https://neuralink.com/updates/prime-study-progress-update/)
+- 2025-05-15: First personalized CRISPR therapy. Doctors at CHOP and Penn built a one-off base-editing therapy for a single infant with a rare metabolic disorder. (https://www.chop.edu/news/worlds-first-patient-treated-personalized-crispr-gene-editing-therapy-childrens-hospital)
+- 2025-06-18: Twice-yearly HIV prevention approved. The FDA approved lenacapavir, an injection given every six months that prevents HIV infection. (https://investors.gilead.com/news/news-details/2025/Yeztugo-Lenacapavir-Is-Now-the-First-and-Only-FDA-Approved-HIV-Prevention-Option-Offering-6-Months-of-Protection/default.aspx)
+- 2026-04-01: Artemis II flies astronauts around the Moon. The first crewed lunar flight since 1972 reached 252,756 miles from Earth, the farthest humans have ever traveled. (https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/)
+- 2026-06-30: Starlink reaches 12 million subscribers. SpaceX reported 12.0 million Starlink subscriber lines, double the 6.0 million a year earlier. (https://www.sec.gov/Archives/edgar/data/0001181412/000162828026052535/spcx-20260630.htm)
+
+## Caveats
+
+- Faster adoption builds on existing networks: ChatGPT reached 100 million people quickly partly because about 5 billion were already online. The telephone needed a copper line to every house. Time to 100 million measures distribution as much as invention.
+- Adoption figures use different yardsticks: Subscriptions, accounts, installs and monthly users are not the same thing, and several figures are third-party estimates. Read each line as order-of-magnitude evidence. The table under the chart lists every measure and source.
+- Exponential is not the same as accelerating: Transistor counts and solar prices change at a near-constant rate, a straight line on the log scale. That is fast, but the rate is not rising. AI training compute is the clear case where the rate itself rose, from doubling every 20 months to every 6.
+- Recent figures are the least certain: Most frontier AI compute values after 2023 are Epoch AI estimates, not disclosures. The newest chips are multi-die packages. NHGRI's genome series ends in 2022. Each data table notes these cases.
+- The milestones are a selection, not a measurement: The milestone list is chosen for context, with a source for every entry. Its spacing proves nothing; a different curator would choose differently. The argument rests on the charts.
+- Faster is not the same as bigger: Economist Robert Gordon argues that inventions of 1870 to 1970, such as electricity, indoor plumbing, cars and antibiotics, raised living standards on a scale that cannot be repeated, and that growth slowed after 1970. This page measures how fast things spread, not how much they changed daily life.

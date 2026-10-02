@@ -23,7 +23,7 @@ for(const m of data.ai.milestones){okDate(m.date);assert.ok(eraIds.has(m.era),m.
 const domains=new Set(data.domains.map(d=>d.id));
 for(const m of data.milestones){okDate(m.date);assert.ok(domains.has(m.domain),m.title);assert.ok(m.line&&m.title);okSrc(m.source);n++;}
 // House style: no em or en dashes in any project file.
-for(const f of readdirSync(here).filter(f=>/\.(html|json|mjs|md)$/.test(f))){const x=read(f);assert.ok(!x.includes(String.fromCharCode(0x2014)),`em dash in ${f}`);assert.ok(!x.includes(String.fromCharCode(0x2013)),`en dash in ${f}`);}
+for(const f of readdirSync(here).filter(f=>/\.(html|json|mjs|md|txt)$/.test(f))){const x=read(f);assert.ok(!x.includes(String.fromCharCode(0x2014)),`em dash in ${f}`);assert.ok(!x.includes(String.fromCharCode(0x2013)),`en dash in ${f}`);}
 // Offline: no external loads of any kind, only outbound <a> links.
 const html=read('index.html');
 assert.ok(!/<(script|link|img|iframe)[^>]+(src|href)=["']?https?:/i.test(html),'external asset');
