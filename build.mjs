@@ -9,7 +9,7 @@ writeFileSync(new URL('llms.txt',here),llms(data));
 console.log(`Built index.html: ${data.adoption.items.length} adoption rows, ${data.curves.length} curves, ${data.milestones.length} milestones, ${Buffer.byteLength(html)} bytes. Wrote llms.txt.`);
 
 function llms(D){
-  const repo='https://github.com/danahmadi/a-century-compressed',raw='https://raw.githubusercontent.com/danahmadi/a-century-compressed/main';
+  const repo='https://github.com/danahmadi/a-century-compressed',site='https://a-century-compressed.vercel.app';
   const item=id=>D.adoption.items.find(i=>i.id===id);
   const home=n=>D.households.items.find(i=>i.name===n);
   const tel=item('telephone'),gpt=item('chatgpt'),cap=v=>v.charAt(0).toUpperCase()+v.slice(1);
@@ -28,9 +28,9 @@ Short answer: some things are accelerating and some are not. ${cap(tel.lower)} t
 
 ## Files
 
-- [Interactive page](${raw}/index.html): single self-contained HTML file; download and open in a browser
-- [All data](${raw}/data.json): every number, date, caveat and source URL used on the page
-- [README](${repo}#readme): what the page shows, how to rebuild it, known limits
+- [Interactive page](${site}/): single self-contained HTML file, no sign-up
+- [All data](${site}/data.json): every number, date, caveat and source URL used on the page
+- [Source code](${repo}): open source; the README covers what the page shows, how to rebuild it and known limits
 
 ## Years from 10% to 80% of US households (Comin and Hobijn via Our World in Data)
 

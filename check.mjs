@@ -26,7 +26,8 @@ for(const m of data.milestones){okDate(m.date);assert.ok(domains.has(m.domain),m
 for(const f of readdirSync(here).filter(f=>/\.(html|json|mjs|md|txt)$/.test(f))){const x=read(f);assert.ok(!x.includes(String.fromCharCode(0x2014)),`em dash in ${f}`);assert.ok(!x.includes(String.fromCharCode(0x2013)),`en dash in ${f}`);}
 // Offline: no external loads of any kind, only outbound <a> links.
 const html=read('index.html');
-assert.ok(!/<(script|link|img|iframe)[^>]+(src|href)=["']?https?:/i.test(html),'external asset');
+// A canonical link names the page's own address and loads nothing, so it is exempt.
+assert.ok(!/<(script|link|img|iframe)[^>]+(src|href)=["']?https?:/i.test(html.replace(/<link rel="canonical"[^>]*>/g,'')),'external asset');
 assert.ok(!/\b(fetch|XMLHttpRequest|WebSocket|sendBeacon|EventSource)\b/.test(html),'network API in page');
 assert.ok(!html.includes('__DATA__'),'index.html not built');
 const scripts=[...html.matchAll(/<script([^>]*)>([\s\S]*?)<\/script>/g)];

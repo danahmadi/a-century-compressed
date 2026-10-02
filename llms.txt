@@ -6,9 +6,9 @@ Short answer: some things are accelerating and some are not. The telephone took 
 
 ## Files
 
-- [Interactive page](https://raw.githubusercontent.com/danahmadi/a-century-compressed/main/index.html): single self-contained HTML file; download and open in a browser
-- [All data](https://raw.githubusercontent.com/danahmadi/a-century-compressed/main/data.json): every number, date, caveat and source URL used on the page
-- [README](https://github.com/danahmadi/a-century-compressed#readme): what the page shows, how to rebuild it, known limits
+- [Interactive page](https://a-century-compressed.vercel.app/): single self-contained HTML file, no sign-up
+- [All data](https://a-century-compressed.vercel.app/data.json): every number, date, caveat and source URL used on the page
+- [Source code](https://github.com/danahmadi/a-century-compressed): open source; the README covers what the page shows, how to rebuild it and known limits
 
 ## Years from 10% to 80% of US households (Comin and Hobijn via Our World in Data)
 
