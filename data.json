@@ -1,0 +1,3162 @@
+{
+ "title": "A Century, Compressed",
+ "start": 1926,
+ "cutoff": "2026-10-01",
+ "households": {
+  "items": [
+   {
+    "name": "Landline telephone",
+    "series": "Landline",
+    "to": 1962.0,
+    "years": 59,
+    "from": 1903.0
+   },
+   {
+    "name": "Electricity",
+    "series": "Electric power",
+    "to": 1941.3,
+    "years": 33,
+    "from": 1908.0
+   },
+   {
+    "name": "Car",
+    "series": "Automobile",
+    "to": 1970.0,
+    "years": 55,
+    "from": 1915.0
+   },
+   {
+    "name": "Radio",
+    "series": "Radio",
+    "to": 1939.0,
+    "years": 14,
+    "from": 1925.0
+   },
+   {
+    "name": "Refrigerator",
+    "series": "Refrigerator",
+    "to": 1949.1,
+    "years": 20,
+    "from": 1929.2
+   },
+   {
+    "name": "Color TV",
+    "series": "Colour TV",
+    "to": 1981.0,
+    "years": 15,
+    "from": 1966.0
+   },
+   {
+    "name": "Microwave",
+    "series": "Microwave",
+    "to": 1991.4,
+    "years": 11,
+    "from": 1980.5
+   },
+   {
+    "name": "Internet",
+    "series": "Internet",
+    "to": 2011.8,
+    "years": 19,
+    "from": 1993.0
+   },
+   {
+    "name": "Cell phone",
+    "series": "Cellular phone",
+    "to": 2008.6,
+    "years": 15,
+    "from": 1994.0
+   },
+   {
+    "name": "Social media",
+    "series": "Social media usage",
+    "to": 2017.0,
+    "years": 11,
+    "from": 2005.8
+   }
+  ],
+  "source": {
+   "title": "Technology adoption by households in the United States (Comin and Hobijn 2004, and others)",
+   "publisher": "Our World in Data",
+   "url": "https://ourworldindata.org/grapher/technology-adoption-by-households-in-the-united-states"
+  },
+  "note": "Each line runs from the year a technology reached 1 in 10 US households to the year it reached 8 in 10. Several series begin at 10%, so their first recorded year is used. US data only; telephone and car adoption were slowed by the Depression and the Second World War."
+ },
+ "ai": {
+  "dek": "From Alan Turing's 1950 question to models that work on their own for hours. The chart measures capability; the timeline shows the ideas that led there.",
+  "horizon": {
+   "id": "horizon",
+   "start": 2019,
+   "forceLog": true,
+   "title": "How long a task AI can complete on its own",
+   "unit": "Length of software and research task, in skilled-human working time, that a model finishes 50% of the time",
+   "dir": "up",
+   "format": "minutes",
+   "style": "scatter",
+   "tipUnit": "task length",
+   "takeaway": "On METR's tasks, this length doubled about every 7 months from 2019 to 2025, and about every 4 months since 2023. The tasks are software and research only, and results above 16 hours exceed what the current task suite measures reliably.",
+   "headline": "4 months",
+   "headlineNote": "doubling time since 2023, per METR (7 months over 2019 to 2025)",
+   "points": [
+    {
+     "date": "2019-02-14",
+     "value": 0.054,
+     "name": "GPT-2",
+     "lo": 0.01,
+     "hi": 0.142,
+     "label": true,
+     "short": "GPT-2",
+     "note": "METR's 2025 task suite; earlier models were not re-run on the 2026 suite"
+    },
+    {
+     "date": "2020-05-28",
+     "value": 0.144,
+     "name": "GPT-3 (davinci-002)",
+     "lo": 0.093,
+     "hi": 0.221,
+     "label": true,
+     "short": "GPT-3",
+     "note": "Dated to GPT-3's paper by METR"
+    },
+    {
+     "date": "2022-03-15",
+     "value": 0.6,
+     "name": "GPT-3.5 (instruct)",
+     "lo": 0.26,
+     "hi": 1.12
+    },
+    {
+     "date": "2023-03-14",
+     "value": 3.99,
+     "name": "GPT-4",
+     "lo": 1.93,
+     "hi": 8.0,
+     "label": true,
+     "short": "GPT-4"
+    },
+    {
+     "date": "2023-11-06",
+     "value": 4.04,
+     "name": "GPT-4 1106",
+     "lo": 1.87,
+     "hi": 8.44
+    },
+    {
+     "date": "2024-01-25",
+     "value": 6.35,
+     "name": "GPT-4 0125",
+     "lo": 3.27,
+     "hi": 11.55
+    },
+    {
+     "date": "2024-03-04",
+     "value": 3.95,
+     "name": "Claude 3 Opus",
+     "lo": 1.71,
+     "hi": 8.76
+    },
+    {
+     "date": "2024-04-09",
+     "value": 3.73,
+     "name": "GPT-4 Turbo",
+     "lo": 1.98,
+     "hi": 6.74
+    },
+    {
+     "date": "2024-05-13",
+     "value": 6.99,
+     "name": "GPT-4o",
+     "lo": 4.0,
+     "hi": 12.91
+    },
+    {
+     "date": "2024-06-07",
+     "value": 2.54,
+     "name": "Qwen2-72B",
+     "lo": 0.95,
+     "hi": 5.94
+    },
+    {
+     "date": "2024-06-20",
+     "value": 11.4,
+     "name": "Claude 3.5 Sonnet",
+     "lo": 5.49,
+     "hi": 22.38
+    },
+    {
+     "date": "2024-09-12",
+     "value": 20.33,
+     "name": "o1-preview",
+     "lo": 11.72,
+     "hi": 33.38
+    },
+    {
+     "date": "2024-09-19",
+     "value": 5.81,
+     "name": "Qwen2.5-72B",
+     "lo": 2.56,
+     "hi": 12.15
+    },
+    {
+     "date": "2024-10-22",
+     "value": 20.52,
+     "name": "Claude 3.5 Sonnet (new)",
+     "lo": 10.14,
+     "hi": 40.82
+    },
+    {
+     "date": "2024-12-05",
+     "value": 38.83,
+     "name": "o1",
+     "lo": 21.16,
+     "hi": 64.95,
+     "label": true,
+     "short": "o1"
+    },
+    {
+     "date": "2024-12-26",
+     "value": 19.82,
+     "name": "DeepSeek-V3",
+     "lo": 10.37,
+     "hi": 35.0
+    },
+    {
+     "date": "2025-01-20",
+     "value": 27.89,
+     "name": "DeepSeek-R1",
+     "lo": 14.42,
+     "hi": 52.75
+    },
+    {
+     "date": "2025-02-24",
+     "value": 60.39,
+     "name": "Claude 3.7 Sonnet",
+     "lo": 33.01,
+     "hi": 104.23
+    },
+    {
+     "date": "2025-03-24",
+     "value": 24.59,
+     "name": "DeepSeek-V3-0324",
+     "lo": 12.57,
+     "hi": 43.33
+    },
+    {
+     "date": "2025-04-16",
+     "value": 119.73,
+     "name": "o3",
+     "lo": 74.62,
+     "hi": 190.94
+    },
+    {
+     "date": "2025-04-16",
+     "value": 76.75,
+     "name": "o4-mini",
+     "lo": 37.05,
+     "hi": 142.12
+    },
+    {
+     "date": "2025-05-22",
+     "value": 100.37,
+     "name": "Claude Opus 4",
+     "lo": 59.99,
+     "hi": 163.45
+    },
+    {
+     "date": "2025-05-22",
+     "value": 73.66,
+     "name": "Claude Sonnet 4",
+     "lo": 38.32,
+     "hi": 127.09
+    },
+    {
+     "date": "2025-05-28",
+     "value": 32.76,
+     "name": "DeepSeek-R1-0528",
+     "lo": 13.76,
+     "hi": 64.08
+    },
+    {
+     "date": "2025-06-05",
+     "value": 40.18,
+     "name": "Gemini 2.5 Pro Preview",
+     "lo": 20.36,
+     "hi": 69.86
+    },
+    {
+     "date": "2025-07-09",
+     "value": 104.85,
+     "name": "Grok 4",
+     "lo": 47.56,
+     "hi": 208.3
+    },
+    {
+     "date": "2025-08-05",
+     "value": 100.47,
+     "name": "Claude Opus 4.1",
+     "lo": 59.27,
+     "hi": 159.45
+    },
+    {
+     "date": "2025-08-05",
+     "value": 45.11,
+     "name": "gpt-oss-120b",
+     "lo": 19.9,
+     "hi": 85.54
+    },
+    {
+     "date": "2025-08-07",
+     "value": 203.01,
+     "name": "GPT-5",
+     "lo": 112.64,
+     "hi": 405.55,
+     "label": true,
+     "short": "GPT-5"
+    },
+    {
+     "date": "2025-09-29",
+     "value": 116.53,
+     "name": "Claude Sonnet 4.5",
+     "lo": 58.94,
+     "hi": 225.75
+    },
+    {
+     "date": "2025-11-06",
+     "value": 57.62,
+     "name": "Kimi K2 Thinking",
+     "lo": 27.42,
+     "hi": 100.59
+    },
+    {
+     "date": "2025-11-18",
+     "value": 224.33,
+     "name": "Gemini 3 Pro",
+     "lo": 139.57,
+     "hi": 379.24
+    },
+    {
+     "date": "2025-11-19",
+     "value": 223.71,
+     "name": "GPT-5.1-Codex-Max",
+     "lo": 134.31,
+     "hi": 396.21
+    },
+    {
+     "date": "2025-11-24",
+     "value": 292.99,
+     "name": "Claude Opus 4.5",
+     "lo": 161.72,
+     "hi": 623.7
+    },
+    {
+     "date": "2025-12-11",
+     "value": 352.25,
+     "name": "GPT-5.2",
+     "lo": 198.07,
+     "hi": 815.18
+    },
+    {
+     "date": "2026-02-05",
+     "value": 718.81,
+     "name": "Claude Opus 4.6",
+     "lo": 316.69,
+     "hi": 3633.79
+    },
+    {
+     "date": "2026-02-05",
+     "value": 349.53,
+     "name": "GPT-5.3-Codex",
+     "lo": 194.91,
+     "hi": 816.35
+    },
+    {
+     "date": "2026-02-19",
+     "value": 384.15,
+     "name": "Gemini 3.1 Pro",
+     "lo": 233.5,
+     "hi": 694.75
+    },
+    {
+     "date": "2026-03-05",
+     "value": 341.74,
+     "name": "GPT-5.4",
+     "lo": 186.58,
+     "hi": 768.78
+    },
+    {
+     "date": "2026-04-07",
+     "value": 1044.78,
+     "name": "Claude Mythos Preview",
+     "lo": 508.88,
+     "hi": 3304.26,
+     "label": true,
+     "short": "Claude Mythos Preview",
+     "note": "Above the 16 hours METR says its tasks can measure reliably"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Task-Completion Time Horizons of Frontier AI Models",
+     "publisher": "METR",
+     "url": "https://metr.org/time-horizons/"
+    },
+    {
+     "title": "Measuring AI Ability to Complete Long Tasks",
+     "publisher": "METR, arXiv 2503.14499",
+     "url": "https://arxiv.org/abs/2503.14499"
+    },
+    {
+     "title": "Time Horizon 1.1",
+     "publisher": "METR",
+     "url": "https://metr.org/blog/2026-1-29-time-horizon-1-1/"
+    }
+   ]
+  },
+  "eras": [
+   {
+    "id": "found",
+    "title": "Foundations",
+    "span": "1950 to 1997"
+   },
+   {
+    "id": "deep",
+    "title": "Deep learning",
+    "span": "2012 to 2016"
+   },
+   {
+    "id": "scale",
+    "title": "Transformers and scale",
+    "span": "2017 to 2020"
+   },
+   {
+    "id": "chat",
+    "title": "Assistants, reasoning and agents",
+    "span": "2022 to 2026"
+   }
+  ],
+  "milestones": [
+   {
+    "era": "found",
+    "date": "1950-10",
+    "title": "Turing asks whether machines can think",
+    "line": "Alan Turing proposed the imitation game, later called the Turing test.",
+    "source": {
+     "title": "Computing Machinery and Intelligence",
+     "publisher": "Mind",
+     "url": "https://academic.oup.com/mind/article/LIX/236/433/986238"
+    }
+   },
+   {
+    "era": "found",
+    "date": "1955-08-31",
+    "title": "The term \"artificial intelligence\" is coined",
+    "line": "McCarthy, Minsky, Rochester and Shannon proposed a 1956 summer study at Dartmouth.",
+    "source": {
+     "title": "A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence",
+     "publisher": "Stanford University",
+     "url": "https://www-formal.stanford.edu/jmc/history/dartmouth/dartmouth.html"
+    }
+   },
+   {
+    "era": "found",
+    "date": "1958-11",
+    "title": "The perceptron",
+    "line": "Frank Rosenblatt described a trainable network that learns to classify patterns from examples.",
+    "source": {
+     "title": "The perceptron",
+     "publisher": "Psychological Review",
+     "url": "https://doi.org/10.1037/h0042519"
+    }
+   },
+   {
+    "era": "found",
+    "date": "1966-01",
+    "title": "ELIZA, the first chatbot",
+    "line": "Joseph Weizenbaum's MIT program held text conversations using keyword pattern matching.",
+    "source": {
+     "title": "ELIZA",
+     "publisher": "Communications of the ACM",
+     "url": "https://dl.acm.org/doi/10.1145/365153.365168"
+    }
+   },
+   {
+    "era": "found",
+    "date": "1986-10-09",
+    "title": "Backpropagation",
+    "line": "Rumelhart, Hinton and Williams showed how to train multilayer neural networks to learn useful representations.",
+    "source": {
+     "title": "Learning representations by back-propagating errors",
+     "publisher": "Nature",
+     "url": "https://www.nature.com/articles/323533a0"
+    }
+   },
+   {
+    "era": "found",
+    "date": "1997-11",
+    "title": "LSTM",
+    "line": "Hochreiter and Schmidhuber introduced a recurrent network that remembers across long sequences.",
+    "source": {
+     "title": "Long Short-Term Memory",
+     "publisher": "Neural Computation",
+     "url": "https://direct.mit.edu/neco/article/9/8/1735/6109/Long-Short-Term-Memory"
+    }
+   },
+   {
+    "era": "deep",
+    "date": "2012-12",
+    "title": "AlexNet wins ImageNet",
+    "line": "A GPU-trained neural network cut image-recognition error far below prior methods.",
+    "source": {
+     "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+     "publisher": "NeurIPS",
+     "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+    }
+   },
+   {
+    "era": "deep",
+    "date": "2013-01-16",
+    "title": "word2vec",
+    "line": "Google researchers learned word meanings as vectors from billions of words of text.",
+    "source": {
+     "title": "Efficient Estimation of Word Representations in Vector Space",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/1301.3781"
+    }
+   },
+   {
+    "era": "deep",
+    "date": "2014-09-01",
+    "title": "Attention",
+    "line": "Bahdanau, Cho and Bengio let translation models focus on the most relevant input words.",
+    "source": {
+     "title": "Neural Machine Translation by Jointly Learning to Align and Translate",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/1409.0473"
+    }
+   },
+   {
+    "era": "deep",
+    "date": "2016-03-15",
+    "title": "AlphaGo defeats Lee Sedol",
+    "line": "DeepMind's system combined neural networks with search to win at Go, 4 to 1.",
+    "source": {
+     "title": "AlphaGo",
+     "publisher": "Google DeepMind",
+     "url": "https://deepmind.google/research/breakthroughs/alphago/"
+    }
+   },
+   {
+    "era": "scale",
+    "date": "2017-06-12",
+    "title": "The Transformer",
+    "line": "\"Attention Is All You Need\" introduced the architecture behind nearly every large language model.",
+    "source": {
+     "title": "Attention Is All You Need",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/1706.03762"
+    }
+   },
+   {
+    "era": "scale",
+    "date": "2018-06-11",
+    "title": "GPT-1",
+    "line": "OpenAI pre-trained a Transformer on unlabeled text, then fine-tuned it for specific tasks.",
+    "source": {
+     "title": "Improving language understanding with unsupervised learning",
+     "publisher": "OpenAI",
+     "url": "https://openai.com/index/language-unsupervised/"
+    }
+   },
+   {
+    "era": "scale",
+    "date": "2020-01-23",
+    "title": "Scaling laws",
+    "line": "OpenAI found model quality improves predictably with more parameters, data and compute.",
+    "source": {
+     "title": "Scaling Laws for Neural Language Models",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/2001.08361"
+    }
+   },
+   {
+    "era": "scale",
+    "date": "2020-05-28",
+    "title": "GPT-3",
+    "line": "A 175-billion-parameter model performed many tasks from a few examples in the prompt.",
+    "source": {
+     "title": "Language Models are Few-Shot Learners",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/2005.14165"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2022-03-04",
+    "title": "Learning from human feedback",
+    "line": "InstructGPT used human ratings to make a model follow instructions; people preferred it to GPT-3.",
+    "source": {
+     "title": "Training language models to follow instructions with human feedback",
+     "publisher": "arXiv",
+     "url": "https://arxiv.org/abs/2203.02155"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2022-11-30",
+    "title": "ChatGPT",
+    "line": "OpenAI released a free conversational research preview.",
+    "source": {
+     "title": "Introducing ChatGPT",
+     "publisher": "OpenAI",
+     "url": "https://openai.com/index/chatgpt/"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2023-03-14",
+    "title": "GPT-4",
+    "line": "A multimodal model scored near human level on many professional exams. Anthropic released Claude the same day.",
+    "source": {
+     "title": "GPT-4",
+     "publisher": "OpenAI",
+     "url": "https://openai.com/index/gpt-4-research/"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2024-09-12",
+    "title": "Reasoning models",
+    "line": "OpenAI's o1 was trained to think step by step before answering.",
+    "source": {
+     "title": "Learning to reason with LLMs",
+     "publisher": "OpenAI",
+     "url": "https://openai.com/index/learning-to-reason-with-llms/"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2024-10-22",
+    "title": "AI operates a computer",
+    "line": "Anthropic let Claude use a computer by viewing the screen, moving the cursor and typing.",
+    "source": {
+     "title": "Introducing computer use",
+     "publisher": "Anthropic",
+     "url": "https://www.anthropic.com/news/3-5-models-and-computer-use"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2025-01-20",
+    "title": "Open reasoning model",
+    "line": "DeepSeek released R1 with open weights, reporting performance comparable to o1.",
+    "source": {
+     "title": "DeepSeek-R1 Release",
+     "publisher": "DeepSeek",
+     "url": "https://api-docs.deepseek.com/news/news250120"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2025-07-21",
+    "title": "Gold at the Math Olympiad",
+    "line": "A Gemini Deep Think model scored 35 of 42, officially graded at gold-medal standard.",
+    "source": {
+     "title": "Gemini Deep Think achieves gold-medal standard at the IMO",
+     "publisher": "Google DeepMind",
+     "url": "https://deepmind.google/discover/blog/advanced-version-of-gemini-with-deep-think-officially-achieves-gold-medal-standard-at-the-international-mathematical-olympiad/"
+    }
+   },
+   {
+    "era": "chat",
+    "date": "2026-05-20",
+    "title": "AI disproves an Erdős conjecture",
+    "line": "An OpenAI reasoning model disproved Paul Erdős's 1946 unit distance conjecture; outside mathematicians checked the proof.",
+    "source": {
+     "title": "An OpenAI model has disproved a central conjecture in discrete geometry",
+     "publisher": "OpenAI",
+     "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/"
+    }
+   }
+  ]
+ },
+ "adoption": {
+  "headline": "chatgpt",
+  "reference": {
+   "name": "Telephone",
+   "launch": "1876",
+   "label": "about 75 years",
+   "note": "Device count, per Boston Consulting Group via Business Insider (2015); low precision",
+   "source": {
+    "title": "It took 75 years for the telephone to reach 100 million users",
+    "publisher": "Business Insider via Yahoo Finance",
+    "url": "https://finance.yahoo.com/news/took-75-years-telephone-reach-153726164.html"
+   }
+  },
+  "note": "Each row uses the measure its source reports: subscriptions, accounts, installs, sign-ups or monthly users. Hover a row or open the table for the measure and caveat. Weakly sourced claims (WhatsApp, the App Store, the PC, DeepSeek) were left out.",
+  "items": [
+   {
+    "id": "telephone",
+    "name": "Telephone",
+    "short": "the telephone",
+    "lower": "the telephone",
+    "launch": "1876-03-07",
+    "launchYear": 1876,
+    "days": 27394,
+    "label": "about 75 years",
+    "unit": "telephones",
+    "metric": "Telephones in service worldwide, an estimate",
+    "caveat": "Counts devices, not people; the 75-year figure is a widely repeated Boston Consulting Group estimate with no published method, broadly consistent with US and ITU telephone counts",
+    "sources": [
+     {
+      "title": "It took 75 years for the telephone to reach 100 million users",
+      "publisher": "Business Insider via Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/took-75-years-telephone-reach-153726164.html"
+     }
+    ]
+   },
+   {
+    "id": "mobile",
+    "name": "Mobile phone",
+    "short": "mobile phones",
+    "lower": "mobile phones",
+    "launch": "1979-12",
+    "launchYear": 1979,
+    "days": 6042,
+    "label": "about 16 years",
+    "unit": "subscriptions",
+    "metric": "Mobile subscriptions worldwide (ITU), counted from NTT's 1979 Tokyo service",
+    "caveat": "Worldwide subscriptions were 91M at the end of 1995 and 145M at the end of 1996. Counted from the 1983 US launch it is about 13 years",
+    "sources": [
+     {
+      "title": "World Telecommunication Development Report 1999",
+      "publisher": "ITU",
+      "url": "https://www.itu.int/ITU-D/ict/publications/wtdr_99/material/wtdr99s.pdf"
+     },
+     {
+      "title": "Mobile phone subscriptions per 100 people",
+      "publisher": "Our World in Data",
+      "url": "https://ourworldindata.org/grapher/mobile-cellular-subscriptions-per-100-people"
+     }
+    ]
+   },
+   {
+    "id": "web",
+    "name": "Internet and the Web",
+    "short": "the internet",
+    "lower": "the Web",
+    "launch": "1991-08-06",
+    "launchYear": 1991,
+    "days": 2339,
+    "label": "about 6.5 years",
+    "unit": "users",
+    "metric": "Estimated internet users worldwide, counted from the Web going public",
+    "caveat": "Internet users, not Web users; the underlying network is older. The US Commerce Department put users above 100 million by the end of 1997",
+    "sources": [
+     {
+      "title": "The Emerging Digital Economy (1998)",
+      "publisher": "US Department of Commerce",
+      "url": "https://govinfo.library.unt.edu/ecommerce/EDEreprt.pdf"
+     }
+    ]
+   },
+   {
+    "id": "itunes",
+    "name": "iTunes Store",
+    "short": "iTunes",
+    "lower": "iTunes",
+    "launch": "2003-04-28",
+    "launchYear": 2003,
+    "days": 2326,
+    "label": "about 6.5 years",
+    "unit": "accounts",
+    "metric": "iTunes Store accounts",
+    "caveat": "Accounts with a payment card, not active users",
+    "sources": [
+     {
+      "title": "Steve Jobs appears at Apple event, Sep. 9, 2009",
+      "publisher": "CNN Money",
+      "url": "https://money.cnn.com/2009/09/09/technology/apple_event_ipod/index.htm"
+     }
+    ]
+   },
+   {
+    "id": "facebook",
+    "name": "Facebook",
+    "short": "Facebook",
+    "lower": "Facebook",
+    "launch": "2004-02-04",
+    "launchYear": 2004,
+    "days": 1665,
+    "label": "about 4.5 years",
+    "unit": "active users",
+    "metric": "Active users, company-reported",
+    "caveat": "Limited to colleges and schools until September 2006",
+    "sources": [
+     {
+      "title": "Facebook hits 100 million users",
+      "publisher": "TechRadar",
+      "url": "https://www.techradar.com/news/world-of-tech/networking/internet/facebook-hits-100-million-users-459600"
+     }
+    ]
+   },
+   {
+    "id": "youtube",
+    "name": "YouTube",
+    "short": "YouTube",
+    "lower": "YouTube",
+    "launch": "2005-12-15",
+    "launchYear": 2005,
+    "days": 335,
+    "label": "about 1 year",
+    "unit": "monthly visitors",
+    "metric": "Worldwide monthly unique visitors (comScore)",
+    "caveat": "Crossed 100M between September (81M) and December (120M) 2006; plotted at mid-November. US-only viewers took about 3 years",
+    "sources": [
+     {
+      "title": "Top Web Properties Worldwide, December 2006",
+      "publisher": "comScore",
+      "url": "https://www.comscore.com/Insights/Press-Releases/2007/01/Top-Internet-Sites-Worldwide"
+     }
+    ]
+   },
+   {
+    "id": "twitter",
+    "name": "Twitter",
+    "short": "Twitter",
+    "lower": "Twitter",
+    "launch": "2006-07-15",
+    "launchYear": 2006,
+    "days": 1881,
+    "label": "about 5 years",
+    "unit": "monthly users",
+    "metric": "Monthly active users",
+    "caveat": "By registered accounts it was about 3.75 years",
+    "sources": [
+     {
+      "title": "Twitter Has 100M Monthly Active Users",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2011/09/08/twitter-has-100m-monthly-active-users-and-40-of-active-users-dont-tweet"
+     }
+    ]
+   },
+   {
+    "id": "instagram",
+    "name": "Instagram",
+    "short": "Instagram",
+    "lower": "Instagram",
+    "launch": "2010-10-06",
+    "launchYear": 2010,
+    "days": 874,
+    "label": "about 2.4 years",
+    "unit": "monthly users",
+    "metric": "Monthly active users, company-announced",
+    "caveat": "iPhone-only until April 2012",
+    "sources": [
+     {
+      "title": "Instagram Hits 100 Million Monthly Users 28 Months After Launch",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2013/02/26/instagram-100-million/"
+     }
+    ]
+   },
+   {
+    "id": "pokemon",
+    "name": "Pokémon Go",
+    "short": "Pokémon Go",
+    "lower": "Pokémon Go",
+    "launch": "2016-07-06",
+    "launchYear": 2016,
+    "days": 25,
+    "label": "about 25 days",
+    "unit": "installs",
+    "metric": "App installs on iOS and Google Play (App Annie)",
+    "caveat": "Installs overstate people; the rollout was staggered by country",
+    "sources": [
+     {
+      "title": "Pokemon Go passed 100 million installs over the weekend",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2016/08/01/pokemon-go-passed-100-million-installs-over-the-weekend"
+     },
+     {
+      "title": "How popular is ChatGPT? Part 2",
+      "publisher": "AI Impacts",
+      "url": "https://aiimpacts.org/how-popular-is-chatgpt-part-2-slower-growth-than-pokemon-go/"
+     }
+    ]
+   },
+   {
+    "id": "tiktok",
+    "name": "TikTok",
+    "short": "TikTok",
+    "lower": "TikTok",
+    "launch": "2017-09",
+    "launchYear": 2017,
+    "days": 274,
+    "label": "about 9 months",
+    "unit": "monthly users",
+    "metric": "Monthly active users (UBS estimate), counted from the international launch",
+    "caveat": "Absorbed Musical.ly's existing users in August 2018; the Chinese sister app Douyin launched in 2016",
+    "sources": [
+     {
+      "title": "ChatGPT sets record for fastest-growing user base: analyst note",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/"
+     },
+     {
+      "title": "TikTok reveals U.S., global user growth numbers for first time",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2020/08/24/tiktok-reveals-us-global-user-growth-numbers-for-first-time.html"
+     }
+    ]
+   },
+   {
+    "id": "chatgpt",
+    "name": "ChatGPT",
+    "short": "ChatGPT",
+    "lower": "ChatGPT",
+    "launch": "2022-11-30",
+    "launchYear": 2022,
+    "days": 62,
+    "label": "about 2 months",
+    "unit": "monthly users",
+    "metric": "Estimated monthly active users (UBS, from Similarweb web traffic)",
+    "caveat": "A third-party estimate, not an OpenAI figure; OpenAI first reported 100M weekly users in November 2023",
+    "sources": [
+     {
+      "title": "ChatGPT sets record for fastest-growing user base: analyst note",
+      "publisher": "Reuters",
+      "url": "https://www.reuters.com/technology/chatgpt-sets-record-fastest-growing-user-base-analyst-note-2023-02-01/"
+     },
+     {
+      "title": "How popular is ChatGPT? Part 2",
+      "publisher": "AI Impacts",
+      "url": "https://aiimpacts.org/how-popular-is-chatgpt-part-2-slower-growth-than-pokemon-go/"
+     }
+    ]
+   },
+   {
+    "id": "threads",
+    "name": "Threads",
+    "short": "Threads",
+    "lower": "Threads",
+    "launch": "2023-07-05",
+    "launchYear": 2023,
+    "days": 5,
+    "label": "5 days",
+    "unit": "sign-ups",
+    "metric": "Sign-ups",
+    "caveat": "One tap for anyone with an Instagram account, so this is borrowed distribution, not organic adoption. Engagement fell sharply afterward",
+    "sources": [
+     {
+      "title": "Instagram's Threads app reaches 100 million users within just five days",
+      "publisher": "TechCrunch",
+      "url": "https://techcrunch.com/2023/07/10/instagrams-threads-app-reaches-100-million-users-in-just-five-days/"
+     }
+    ]
+   },
+   {
+    "id": "iphone",
+    "name": "iPhone",
+    "short": "the iPhone",
+    "lower": "the iPhone",
+    "launch": "2007-06-29",
+    "launchYear": 2007,
+    "days": 1342,
+    "label": "about 3.7 years",
+    "unit": "units",
+    "metric": "Cumulative iPhones shipped, announced by Steve Jobs on March 2, 2011",
+    "caveat": "Units, not unique users; the announcement date, not the exact crossing",
+    "sources": [
+     {
+      "title": "Apple Reports Second Quarter Results (2011)",
+      "publisher": "Apple Newsroom",
+      "url": "https://www.apple.com/newsroom/2011/04/20Apple-Reports-Second-Quarter-Results/"
+     }
+    ]
+   },
+   {
+    "id": "android",
+    "name": "Android",
+    "short": "Android",
+    "lower": "Android",
+    "launch": "2008-10-22",
+    "launchYear": 2008,
+    "days": 930,
+    "label": "about 2.5 years",
+    "unit": "activations",
+    "metric": "Cumulative Android device activations, announced at Google I/O on May 10, 2011",
+    "caveat": "Includes tablets and many manufacturers; the announcement date, not the exact crossing",
+    "sources": [
+     {
+      "title": "Android: momentum, mobile and more at Google I/O",
+      "publisher": "Google",
+      "url": "https://googleblog.blogspot.com/2011/05/android-momentum-mobile-and-more-at.html"
+     }
+    ]
+   }
+  ]
+ },
+ "curves": [
+  {
+   "id": "ai",
+   "start": 1950,
+   "title": "Compute used to train landmark AI systems",
+   "unit": "Floating-point operations (FLOP) per training run",
+   "dir": "up",
+   "format": "flop",
+   "style": "scatter",
+   "tipUnit": "FLOP",
+   "multLabel": "more than AlexNet",
+   "takeaway": "Here the growth rate itself increased. From Shannon's 1950 maze mouse to about 2010, training compute doubled roughly every 20 months, close to Moore's law. Since then it has doubled roughly every 6 months.",
+   "points": [
+    {
+     "date": "1950-07-02",
+     "value": 40,
+     "name": "Theseus",
+     "note": "Shannon's maze-solving mouse; Epoch: confident"
+    },
+    {
+     "date": "1957-01-01",
+     "value": 695000.0,
+     "name": "Perceptron Mark I",
+     "note": "Rosenblatt, Cornell; Epoch: likely"
+    },
+    {
+     "date": "1960-06-30",
+     "value": 6600.0,
+     "name": "ADALINE",
+     "note": "Widrow and Hoff, Stanford"
+    },
+    {
+     "date": "1959-07-01",
+     "value": 428000000.0,
+     "name": "Samuel checkers",
+     "note": "Arthur Samuel, IBM; Epoch: likely"
+    },
+    {
+     "date": "1975-09-01",
+     "value": 5180000.0,
+     "name": "Cognitron",
+     "note": "Fukushima, NHK"
+    },
+    {
+     "date": "1980-04-01",
+     "value": 274000000.0,
+     "name": "Neocognitron",
+     "note": "Fukushima, NHK"
+    },
+    {
+     "date": "1986-10-01",
+     "value": 674000000.0,
+     "name": "Backprop MLP",
+     "note": "Rumelhart, Hinton, Williams"
+    },
+    {
+     "date": "1987-06-06",
+     "value": 28300000000.0,
+     "name": "NetTalk",
+     "note": "Princeton"
+    },
+    {
+     "date": "1992-05-01",
+     "value": 18200000000000.0,
+     "name": "TD-Gammon",
+     "note": "IBM; Epoch: speculative"
+    },
+    {
+     "date": "1997-11-15",
+     "value": 31500000000000.0,
+     "name": "LSTM",
+     "note": "TU Munich"
+    },
+    {
+     "date": "1998-11-01",
+     "value": 2810000000000.0,
+     "name": "LeNet-5",
+     "note": "AT&T"
+    },
+    {
+     "date": "2012-09-30",
+     "value": 4.7e+17,
+     "name": "AlexNet",
+     "note": "University of Toronto",
+     "label": true,
+     "base": true
+    },
+    {
+     "date": "2014-09-10",
+     "value": 5.6e+19,
+     "name": "Seq2Seq",
+     "note": "Google"
+    },
+    {
+     "date": "2016-01-27",
+     "value": 1.9e+21,
+     "name": "AlphaGo Lee",
+     "note": "DeepMind; Epoch: speculative"
+    },
+    {
+     "date": "2017-06-12",
+     "value": 7.42e+18,
+     "name": "Transformer",
+     "note": "Google; a research model, not a frontier run"
+    },
+    {
+     "date": "2017-10-18",
+     "value": 6.49e+20,
+     "name": "AlphaGo Zero",
+     "note": "DeepMind",
+     "label": true
+    },
+    {
+     "date": "2018-10-11",
+     "value": 2.85e+20,
+     "name": "BERT-Large",
+     "note": "Google"
+    },
+    {
+     "date": "2019-02-14",
+     "value": 1.92e+21,
+     "name": "GPT-2",
+     "note": "OpenAI; Epoch: speculative"
+    },
+    {
+     "date": "2020-05-28",
+     "value": 3.14e+23,
+     "name": "GPT-3",
+     "note": "OpenAI",
+     "label": true
+    },
+    {
+     "date": "2022-04-04",
+     "value": 2.53e+24,
+     "name": "PaLM",
+     "note": "Google"
+    },
+    {
+     "date": "2023-03-15",
+     "value": 2.1e+25,
+     "name": "GPT-4",
+     "note": "OpenAI; Epoch estimate, 90% CI 8.2e24 to 4.4e25"
+    },
+    {
+     "date": "2023-12-06",
+     "value": 5e+25,
+     "name": "Gemini 1.0 Ultra",
+     "note": "Google DeepMind; Epoch: speculative"
+    },
+    {
+     "date": "2024-07-23",
+     "value": 3.8e+25,
+     "name": "Llama 3.1 405B",
+     "note": "Meta; disclosed by developer"
+    },
+    {
+     "date": "2025-02-17",
+     "value": 3.5e+26,
+     "name": "Grok 3",
+     "note": "xAI; Epoch estimate"
+    },
+    {
+     "date": "2025-02-27",
+     "value": 3.8e+26,
+     "name": "GPT-4.5",
+     "note": "OpenAI; Epoch estimate"
+    },
+    {
+     "date": "2025-07-09",
+     "value": 5e+26,
+     "name": "Grok 4",
+     "note": "xAI; Epoch: speculative"
+    },
+    {
+     "date": "2025-08-07",
+     "value": 6.6e+25,
+     "name": "GPT-5",
+     "note": "OpenAI; Epoch: speculative"
+    },
+    {
+     "date": "2026-09-03",
+     "value": 1e+27,
+     "name": "GPT-6 Astra",
+     "note": "OpenAI; Epoch estimate, CI about 5e26 to 2e27",
+     "label": true
+    }
+   ],
+   "sources": [
+    {
+     "title": "Notable AI Models dataset",
+     "publisher": "Epoch AI",
+     "url": "https://epoch.ai/data/notable-ai-models"
+    },
+    {
+     "title": "Training compute of frontier AI models grows by 4-5x per year",
+     "publisher": "Epoch AI",
+     "url": "https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year"
+    },
+    {
+     "title": "Compute Trends Across Three Eras of Machine Learning",
+     "publisher": "Epoch AI",
+     "url": "https://epoch.ai/blog/compute-trends"
+    }
+   ]
+  },
+  {
+   "id": "chips",
+   "start": 1970,
+   "title": "Transistors on a single chip",
+   "unit": "Count per processor; recent entries are multi-die packages",
+   "dir": "up",
+   "format": "count",
+   "style": "scatter",
+   "tipUnit": "transistors",
+   "multLabel": "more than the Intel 4004",
+   "takeaway": "Moore's law: doubling about every two years for five decades, a near-straight line on the log scale. The largest recent chips join two or more dies in one package. Cerebras WSE-3 (2024), a whole wafer, holds 4 trillion and is not plotted.",
+   "points": [
+    {
+     "base": true,
+     "date": "1971-11-15",
+     "value": 2250,
+     "name": "Intel 4004",
+     "note": "First commercial microprocessor; Wikipedia table"
+    },
+    {
+     "date": "1976",
+     "value": 6500,
+     "name": "Intel 8085",
+     "note": "Wikipedia transistor count table"
+    },
+    {
+     "date": "1978",
+     "value": 29000,
+     "name": "Intel 8086",
+     "note": "Wikipedia table",
+     "label": true,
+     "short": "8086"
+    },
+    {
+     "date": "1982",
+     "value": 134000,
+     "name": "Intel 80286",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "1985",
+     "value": 275000,
+     "name": "Intel 80386",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "1989",
+     "value": 1180235,
+     "name": "Intel 80486",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "1993",
+     "value": 3100000,
+     "name": "Intel Pentium",
+     "note": "Wikipedia table",
+     "label": true,
+     "short": "Pentium"
+    },
+    {
+     "date": "2000",
+     "value": 42000000,
+     "name": "Intel Pentium 4",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "2006",
+     "value": 291000000,
+     "name": "Intel Core 2 Duo",
+     "note": "Wikipedia table",
+     "label": true,
+     "short": "Core 2"
+    },
+    {
+     "date": "2013",
+     "value": 1000000000,
+     "name": "Apple A7",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "2017",
+     "value": 4300000000,
+     "name": "Apple A11 Bionic",
+     "note": "Wikipedia table"
+    },
+    {
+     "date": "2020-11-10",
+     "value": 16000000000,
+     "name": "Apple M1",
+     "note": "Apple newsroom",
+     "label": true,
+     "short": "Apple M1"
+    },
+    {
+     "date": "2022-03-22",
+     "value": 80000000000,
+     "name": "NVIDIA H100",
+     "note": "NVIDIA newsroom; single die"
+    },
+    {
+     "date": "2022-03",
+     "value": 114000000000,
+     "name": "Apple M1 Ultra",
+     "note": "Apple newsroom; two dies in one package"
+    },
+    {
+     "date": "2023-10",
+     "value": 92000000000,
+     "name": "Apple M3 Max",
+     "note": "Apple newsroom; single die"
+    },
+    {
+     "date": "2024",
+     "value": 208000000000,
+     "name": "NVIDIA B200",
+     "note": "NVIDIA; two dies run as one GPU"
+    },
+    {
+     "date": "2026-07-21",
+     "value": 336000000000,
+     "name": "NVIDIA Rubin",
+     "note": "NVIDIA developer blog; multi-die package",
+     "label": true,
+     "short": "NVIDIA Rubin"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Transistor count",
+     "publisher": "Wikipedia",
+     "url": "https://en.wikipedia.org/wiki/Transistor_count"
+    },
+    {
+     "title": "Apple unleashes M1",
+     "publisher": "Apple Newsroom",
+     "url": "https://www.apple.com/newsroom/2020/11/apple-unleashes-m1/"
+    },
+    {
+     "title": "Inside the NVIDIA Rubin GPU architecture",
+     "publisher": "NVIDIA Developer Blog",
+     "url": "https://developer.nvidia.com/blog/inside-nvidia-rubin-gpu-architecture-powering-the-era-of-agentic-ai/"
+    }
+   ]
+  },
+  {
+   "id": "genome",
+   "start": 2000,
+   "title": "Cost to sequence a human genome",
+   "unit": "US dollars per genome, NHGRI production cost",
+   "dir": "down",
+   "format": "usd",
+   "style": "line",
+   "tipUnit": "per genome",
+   "multLabel": "cheaper",
+   "takeaway": "The drop in 2008 is the switch to next-generation sequencing, when costs fell far faster than Moore's law. NHGRI's series stops in 2022 at about $525. Vendors now claim $100 to $200 at full machine utilization.",
+   "points": [
+    {
+     "date": "2001-09-30",
+     "value": 95263071.92,
+     "name": "Human Genome Project era",
+     "label": true,
+     "short": "$95M"
+    },
+    {
+     "date": "2002-03-31",
+     "value": 70175437.42
+    },
+    {
+     "date": "2002-09-30",
+     "value": 61448421.5
+    },
+    {
+     "date": "2003-03-31",
+     "value": 53751684.08
+    },
+    {
+     "date": "2003-10-31",
+     "value": 40157554.23
+    },
+    {
+     "date": "2004-01-31",
+     "value": 28780376.21
+    },
+    {
+     "date": "2004-04-30",
+     "value": 20442576.14
+    },
+    {
+     "date": "2004-07-31",
+     "value": 19934345.74
+    },
+    {
+     "date": "2004-10-31",
+     "value": 18519312.16
+    },
+    {
+     "date": "2005-01-31",
+     "value": 17534969.56
+    },
+    {
+     "date": "2005-04-30",
+     "value": 16159699.44
+    },
+    {
+     "date": "2005-07-31",
+     "value": 16180224.1
+    },
+    {
+     "date": "2005-10-31",
+     "value": 13801124.19
+    },
+    {
+     "date": "2006-01-31",
+     "value": 12585658.9
+    },
+    {
+     "date": "2006-04-30",
+     "value": 11732534.52
+    },
+    {
+     "date": "2006-07-31",
+     "value": 11455315.22
+    },
+    {
+     "date": "2006-10-31",
+     "value": 10474556.36
+    },
+    {
+     "date": "2007-01-31",
+     "value": 9408738.91
+    },
+    {
+     "date": "2007-04-30",
+     "value": 9047002.97
+    },
+    {
+     "date": "2007-07-31",
+     "value": 8927342.14
+    },
+    {
+     "date": "2007-10-31",
+     "value": 7147571.39
+    },
+    {
+     "date": "2008-01-31",
+     "value": 3063819.99
+    },
+    {
+     "date": "2008-04-30",
+     "value": 1352982.23
+    },
+    {
+     "date": "2008-07-31",
+     "value": 752079.9
+    },
+    {
+     "date": "2008-10-31",
+     "value": 342502.06
+    },
+    {
+     "date": "2009-01-31",
+     "value": 232735.44
+    },
+    {
+     "date": "2009-04-30",
+     "value": 154713.6
+    },
+    {
+     "date": "2009-07-31",
+     "value": 108065.14
+    },
+    {
+     "date": "2009-10-31",
+     "value": 70333.33
+    },
+    {
+     "date": "2010-01-31",
+     "value": 46774.27
+    },
+    {
+     "date": "2010-04-30",
+     "value": 31512.04
+    },
+    {
+     "date": "2010-07-31",
+     "value": 31124.96
+    },
+    {
+     "date": "2010-10-31",
+     "value": 29091.73
+    },
+    {
+     "date": "2011-01-31",
+     "value": 20962.78
+    },
+    {
+     "date": "2011-04-30",
+     "value": 16712.01
+    },
+    {
+     "date": "2011-07-31",
+     "value": 10496.93
+    },
+    {
+     "date": "2011-10-30",
+     "value": 7743.44
+    },
+    {
+     "date": "2012-01-31",
+     "value": 7666.22
+    },
+    {
+     "date": "2012-04-30",
+     "value": 5901.29
+    },
+    {
+     "date": "2012-07-31",
+     "value": 5984.72
+    },
+    {
+     "date": "2012-10-31",
+     "value": 6618.35
+    },
+    {
+     "date": "2013-01-31",
+     "value": 5671.35
+    },
+    {
+     "date": "2013-04-30",
+     "value": 5550.26
+    },
+    {
+     "date": "2013-07-31",
+     "value": 5550.26
+    },
+    {
+     "date": "2013-10-31",
+     "value": 5096.08
+    },
+    {
+     "date": "2014-01-31",
+     "value": 4008.11
+    },
+    {
+     "date": "2014-04-30",
+     "value": 4920.5
+    },
+    {
+     "date": "2014-07-31",
+     "value": 4904.85
+    },
+    {
+     "date": "2014-10-31",
+     "value": 5730.89
+    },
+    {
+     "date": "2015-01-31",
+     "value": 3969.84
+    },
+    {
+     "date": "2015-04-30",
+     "value": 4210.79
+    },
+    {
+     "date": "2015-07-31",
+     "value": 1363.24
+    },
+    {
+     "date": "2015-10-31",
+     "value": 1245.31
+    },
+    {
+     "date": "2016-05-31",
+     "value": 1175.74
+    },
+    {
+     "date": "2016-08-31",
+     "value": 1507.77
+    },
+    {
+     "date": "2016-11-30",
+     "value": 1355.79
+    },
+    {
+     "date": "2017-02-28",
+     "value": 1015.38
+    },
+    {
+     "date": "2017-05-31",
+     "value": 1333.4
+    },
+    {
+     "date": "2017-08-31",
+     "value": 1133.96
+    },
+    {
+     "date": "2017-11-30",
+     "value": 1844.08
+    },
+    {
+     "date": "2018-02-28",
+     "value": 1232.28
+    },
+    {
+     "date": "2018-05-31",
+     "value": 1463.13
+    },
+    {
+     "date": "2018-08-31",
+     "value": 1467.28
+    },
+    {
+     "date": "2018-11-30",
+     "value": 1391.68
+    },
+    {
+     "date": "2019-02-28",
+     "value": 993.14
+    },
+    {
+     "date": "2019-05-01",
+     "value": 606.32
+    },
+    {
+     "date": "2019-08-01",
+     "value": 942.15
+    },
+    {
+     "date": "2019-11-30",
+     "value": 695.37
+    },
+    {
+     "date": "2020-02-28",
+     "value": 644.62
+    },
+    {
+     "date": "2020-05-31",
+     "value": 701.56
+    },
+    {
+     "date": "2020-08-31",
+     "value": 688.57
+    },
+    {
+     "date": "2020-11-30",
+     "value": 511.97
+    },
+    {
+     "date": "2021-02-28",
+     "value": 850.84
+    },
+    {
+     "date": "2021-05-31",
+     "value": 454.05
+    },
+    {
+     "date": "2021-08-31",
+     "value": 562.18
+    },
+    {
+     "date": "2021-11-30",
+     "value": 552.2
+    },
+    {
+     "date": "2022-02-28",
+     "value": 524.62
+    },
+    {
+     "date": "2022-05-31",
+     "value": 524.62,
+     "name": "Latest NHGRI figure",
+     "label": true,
+     "short": "$525"
+    }
+   ],
+   "sources": [
+    {
+     "title": "DNA Sequencing Costs: Data",
+     "publisher": "NHGRI",
+     "url": "https://www.genome.gov/about-genomics/fact-sheets/DNA-Sequencing-Costs-Data"
+    }
+   ]
+  },
+  {
+   "id": "solar",
+   "start": 1975,
+   "title": "Price of a solar panel",
+   "unit": "Module price, constant 2025 US dollars per watt",
+   "dir": "down",
+   "format": "usdw",
+   "style": "line",
+   "tipUnit": "per watt",
+   "multLabel": "cheaper",
+   "takeaway": "Panels that cost about $130 a watt in 1975 cost about 27 cents in 2024. The decline is steady rather than sudden: the more panels the world built, the cheaper each one became. Before 2010 the series is a global estimate; after, a European market benchmark.",
+   "points": [
+    {
+     "date": "1975",
+     "value": 132.3757
+    },
+    {
+     "date": "1976",
+     "value": 99.5976
+    },
+    {
+     "date": "1977",
+     "value": 72.6611
+    },
+    {
+     "date": "1978",
+     "value": 51.4082
+    },
+    {
+     "date": "1979",
+     "value": 43.1951
+    },
+    {
+     "date": "1980",
+     "value": 36.605
+    },
+    {
+     "date": "1981",
+     "value": 29.2664
+    },
+    {
+     "date": "1982",
+     "value": 26.2952
+    },
+    {
+     "date": "1983",
+     "value": 21.2281
+    },
+    {
+     "date": "1984",
+     "value": 19.725
+    },
+    {
+     "date": "1985",
+     "value": 17.2204
+    },
+    {
+     "date": "1986",
+     "value": 14.2447
+    },
+    {
+     "date": "1987",
+     "value": 12.1104
+    },
+    {
+     "date": "1988",
+     "value": 11.3116
+    },
+    {
+     "date": "1989",
+     "value": 11.6901
+    },
+    {
+     "date": "1990",
+     "value": 12.0911
+    },
+    {
+     "date": "1991",
+     "value": 11.2008
+    },
+    {
+     "date": "1992",
+     "value": 10.4351
+    },
+    {
+     "date": "1993",
+     "value": 9.7587
+    },
+    {
+     "date": "1994",
+     "value": 9.2315
+    },
+    {
+     "date": "1995",
+     "value": 8.5355
+    },
+    {
+     "date": "1996",
+     "value": 7.9798
+    },
+    {
+     "date": "1997",
+     "value": 7.952
+    },
+    {
+     "date": "1998",
+     "value": 7.1656
+    },
+    {
+     "date": "1999",
+     "value": 6.6193
+    },
+    {
+     "date": "2000",
+     "value": 6.4959
+    },
+    {
+     "date": "2001",
+     "value": 6.2844
+    },
+    {
+     "date": "2002",
+     "value": 5.7473
+    },
+    {
+     "date": "2003",
+     "value": 5.4638
+    },
+    {
+     "date": "2004",
+     "value": 4.6955
+    },
+    {
+     "date": "2005",
+     "value": 4.7457
+    },
+    {
+     "date": "2006",
+     "value": 5.1727
+    },
+    {
+     "date": "2007",
+     "value": 5.2111
+    },
+    {
+     "date": "2008",
+     "value": 4.7492
+    },
+    {
+     "date": "2009",
+     "value": 3.1743
+    },
+    {
+     "date": "2010",
+     "value": 2.5118
+    },
+    {
+     "date": "2011",
+     "value": 2.0609
+    },
+    {
+     "date": "2012",
+     "value": 1.1107
+    },
+    {
+     "date": "2013",
+     "value": 0.8566
+    },
+    {
+     "date": "2014",
+     "value": 0.7905
+    },
+    {
+     "date": "2015",
+     "value": 0.7357
+    },
+    {
+     "date": "2016",
+     "value": 0.6803
+    },
+    {
+     "date": "2017",
+     "value": 0.5714
+    },
+    {
+     "date": "2018",
+     "value": 0.5091
+    },
+    {
+     "date": "2019",
+     "value": 0.4669
+    },
+    {
+     "date": "2020",
+     "value": 0.3697
+    },
+    {
+     "date": "2021",
+     "value": 0.3319
+    },
+    {
+     "date": "2022",
+     "value": 0.3658
+    },
+    {
+     "date": "2023",
+     "value": 0.3218
+    },
+    {
+     "date": "2024",
+     "value": 0.2652,
+     "name": "2024",
+     "label": true,
+     "short": "$0.27"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Solar photovoltaic module prices (IRENA, Nemet, Farmer and Lafond)",
+     "publisher": "Our World in Data",
+     "url": "https://ourworldindata.org/grapher/solar-pv-prices"
+    }
+   ]
+  },
+  {
+   "id": "space",
+   "start": 1957,
+   "title": "Objects launched into space each year",
+   "unit": "Satellites, probes, crewed craft and station parts",
+   "dir": "up",
+   "format": "count",
+   "style": "line",
+   "tipUnit": "objects",
+   "multLabel": "more than in",
+   "takeaway": "For six decades, launches ran from a few dozen to a few hundred a year. The jump after 2019 coincides with satellite megaconstellations, led by SpaceX's Starlink, which grew from 1 million subscribers in December 2022 to 12.0 million by June 2026.",
+   "points": [
+    {
+     "date": "1957",
+     "value": 2.0
+    },
+    {
+     "date": "1958",
+     "value": 8.0
+    },
+    {
+     "date": "1959",
+     "value": 14.0
+    },
+    {
+     "date": "1960",
+     "value": 20.0
+    },
+    {
+     "date": "1961",
+     "value": 38.0
+    },
+    {
+     "date": "1962",
+     "value": 77.0
+    },
+    {
+     "date": "1963",
+     "value": 71.0
+    },
+    {
+     "date": "1964",
+     "value": 107.0
+    },
+    {
+     "date": "1965",
+     "value": 161.0
+    },
+    {
+     "date": "1966",
+     "value": 145.0
+    },
+    {
+     "date": "1967",
+     "value": 159.0
+    },
+    {
+     "date": "1968",
+     "value": 140.0
+    },
+    {
+     "date": "1969",
+     "value": 138.0
+    },
+    {
+     "date": "1970",
+     "value": 130.0
+    },
+    {
+     "date": "1971",
+     "value": 156.0
+    },
+    {
+     "date": "1972",
+     "value": 134.0
+    },
+    {
+     "date": "1973",
+     "value": 138.0
+    },
+    {
+     "date": "1974",
+     "value": 128.0
+    },
+    {
+     "date": "1975",
+     "value": 158.0
+    },
+    {
+     "date": "1976",
+     "value": 158.0
+    },
+    {
+     "date": "1977",
+     "value": 137.0
+    },
+    {
+     "date": "1978",
+     "value": 165.0
+    },
+    {
+     "date": "1979",
+     "value": 124.0
+    },
+    {
+     "date": "1980",
+     "value": 130.0
+    },
+    {
+     "date": "1981",
+     "value": 158.0
+    },
+    {
+     "date": "1982",
+     "value": 145.0
+    },
+    {
+     "date": "1983",
+     "value": 154.0
+    },
+    {
+     "date": "1984",
+     "value": 163.0
+    },
+    {
+     "date": "1985",
+     "value": 165.0
+    },
+    {
+     "date": "1986",
+     "value": 134.0
+    },
+    {
+     "date": "1987",
+     "value": 135.0
+    },
+    {
+     "date": "1988",
+     "value": 145.0
+    },
+    {
+     "date": "1989",
+     "value": 139.0
+    },
+    {
+     "date": "1990",
+     "value": 170.0
+    },
+    {
+     "date": "1991",
+     "value": 137.0
+    },
+    {
+     "date": "1992",
+     "value": 130.0
+    },
+    {
+     "date": "1993",
+     "value": 108.0
+    },
+    {
+     "date": "1994",
+     "value": 123.0
+    },
+    {
+     "date": "1995",
+     "value": 105.0
+    },
+    {
+     "date": "1996",
+     "value": 100.0
+    },
+    {
+     "date": "1997",
+     "value": 152.0
+    },
+    {
+     "date": "1998",
+     "value": 157.0
+    },
+    {
+     "date": "1999",
+     "value": 129.0
+    },
+    {
+     "date": "2000",
+     "value": 121.0
+    },
+    {
+     "date": "2001",
+     "value": 86.0
+    },
+    {
+     "date": "2002",
+     "value": 96.0
+    },
+    {
+     "date": "2003",
+     "value": 88.0
+    },
+    {
+     "date": "2004",
+     "value": 74.0
+    },
+    {
+     "date": "2005",
+     "value": 72.0
+    },
+    {
+     "date": "2006",
+     "value": 95.0
+    },
+    {
+     "date": "2007",
+     "value": 111.0
+    },
+    {
+     "date": "2008",
+     "value": 109.0
+    },
+    {
+     "date": "2009",
+     "value": 125.0
+    },
+    {
+     "date": "2010",
+     "value": 121.0
+    },
+    {
+     "date": "2011",
+     "value": 129.0
+    },
+    {
+     "date": "2012",
+     "value": 134.0
+    },
+    {
+     "date": "2013",
+     "value": 210.0
+    },
+    {
+     "date": "2014",
+     "value": 241.0
+    },
+    {
+     "date": "2015",
+     "value": 222.0,
+     "base": true
+    },
+    {
+     "date": "2016",
+     "value": 221.0
+    },
+    {
+     "date": "2017",
+     "value": 456.0
+    },
+    {
+     "date": "2018",
+     "value": 452.0
+    },
+    {
+     "date": "2019",
+     "value": 586.0
+    },
+    {
+     "date": "2020",
+     "value": 1274.0
+    },
+    {
+     "date": "2021",
+     "value": 1814.0
+    },
+    {
+     "date": "2022",
+     "value": 2479.0
+    },
+    {
+     "date": "2023",
+     "value": 2903.0
+    },
+    {
+     "date": "2024",
+     "value": 2849.0
+    },
+    {
+     "date": "2025",
+     "value": 4510.0,
+     "name": "2025",
+     "label": true,
+     "short": "4,510"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Annual number of objects launched into space (UN Office for Outer Space Affairs)",
+     "publisher": "Our World in Data",
+     "url": "https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space"
+    },
+    {
+     "title": "SpaceX Form 10-Q, quarter ended June 30, 2026",
+     "publisher": "U.S. SEC",
+     "url": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026052535/spcx-20260630.htm"
+    }
+   ]
+  },
+  {
+   "id": "ev",
+   "start": 2010,
+   "title": "Electric share of new car sales",
+   "unit": "Battery-electric and plug-in hybrid cars, share of new sales worldwide",
+   "dir": "up",
+   "format": "pct",
+   "style": "line",
+   "tipUnit": "of new cars",
+   "headline": "25%",
+   "headlineNote": "of new cars sold in 2025 were electric, up from 0.68% in 2015",
+   "takeaway": "The same S-curve as earlier technologies: years of slow growth, then a fast climb. In 2025 the share was 53% in China, 28% in Europe and 10% in the United States.",
+   "points": [
+    {
+     "date": "2010",
+     "value": 0.012
+    },
+    {
+     "date": "2011",
+     "value": 0.072
+    },
+    {
+     "date": "2012",
+     "value": 0.17
+    },
+    {
+     "date": "2013",
+     "value": 0.29
+    },
+    {
+     "date": "2014",
+     "value": 0.44
+    },
+    {
+     "date": "2015",
+     "value": 0.68
+    },
+    {
+     "date": "2016",
+     "value": 0.95
+    },
+    {
+     "date": "2017",
+     "value": 1.4
+    },
+    {
+     "date": "2018",
+     "value": 2.4
+    },
+    {
+     "date": "2019",
+     "value": 2.7
+    },
+    {
+     "date": "2020",
+     "value": 4.4
+    },
+    {
+     "date": "2021",
+     "value": 9.3
+    },
+    {
+     "date": "2022",
+     "value": 15.0
+    },
+    {
+     "date": "2023",
+     "value": 18.0
+    },
+    {
+     "date": "2024",
+     "value": 21.0
+    },
+    {
+     "date": "2025",
+     "value": 25.0,
+     "name": "2025",
+     "label": true,
+     "short": "25%"
+    }
+   ],
+   "sources": [
+    {
+     "title": "Share of new cars that are electric (IEA Global EV Outlook 2026)",
+     "publisher": "Our World in Data",
+     "url": "https://ourworldindata.org/grapher/electric-car-sales-share"
+    }
+   ]
+  }
+ ],
+ "milestones": [
+  {
+   "date": "1977-09-05",
+   "domain": "space",
+   "weight": 3,
+   "title": "Voyager 1 launches",
+   "short": "Voyager 1",
+   "line": "Launched toward the outer planets; it later became the first human-made object in interstellar space.",
+   "source": {
+    "title": "45 Years Ago: Voyager 1 Begins its Epic Journey",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/history/45-years-ago-voyager-1-begins-its-epic-journey-to-the-outer-planets-and-beyond/"
+   }
+  },
+  {
+   "date": "1983-10-13",
+   "domain": "computing",
+   "weight": 2,
+   "title": "First US commercial cellular network",
+   "short": "Cell network",
+   "line": "Ameritech opened public cellular service in Chicago, beginning with calls from Soldier Field.",
+   "source": {
+    "title": "The first commercial cellular call in America",
+    "publisher": "RCR Wireless News",
+    "url": "https://rcrwireless.com/20181016/opinion/readerforum/cellular-under-the-tree-in-83-the-first-commercial-cellular-call-in-america"
+   }
+  },
+  {
+   "date": "1989-03",
+   "domain": "computing",
+   "weight": 3,
+   "title": "World Wide Web proposed at CERN",
+   "short": "The Web",
+   "line": "Tim Berners-Lee proposed a distributed hypertext system. The first server ran in late 1990, and the Web was made public in August 1991.",
+   "source": {
+    "title": "The birth of the Web",
+    "publisher": "CERN",
+    "url": "https://home.cern/science/computing/birth-web"
+   }
+  },
+  {
+   "date": "1990-04-24",
+   "domain": "space",
+   "weight": 2,
+   "title": "Hubble Space Telescope launches",
+   "short": "Hubble",
+   "line": "Carried to orbit by Space Shuttle Discovery on mission STS-31.",
+   "source": {
+    "title": "STS-31",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/mission/sts-31/"
+   }
+  },
+  {
+   "date": "1997-02-22",
+   "domain": "biology",
+   "weight": 2,
+   "title": "Dolly the sheep announced",
+   "short": "Dolly",
+   "line": "The first mammal cloned from an adult cell, born at the Roslin Institute in July 1996.",
+   "source": {
+    "title": "The story of Dolly the sheep",
+    "publisher": "National Museums Scotland",
+    "url": "https://www.nms.ac.uk/discover-catalogue/the-story-of-dolly-the-sheep"
+   }
+  },
+  {
+   "date": "1998-11-20",
+   "domain": "space",
+   "weight": 1,
+   "title": "First International Space Station module",
+   "short": "ISS",
+   "line": "Zarya launched from Baikonur, beginning assembly of the station.",
+   "source": {
+    "title": "Zarya Module",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/international-space-station/zarya-module/"
+   }
+  },
+  {
+   "date": "2003-04-14",
+   "domain": "biology",
+   "weight": 3,
+   "title": "Human Genome Project completed",
+   "short": "Human genome",
+   "line": "The international consortium finished the human genome sequence, more than two years ahead of schedule.",
+   "source": {
+    "title": "International Consortium Completes Human Genome Project",
+    "publisher": "NHGRI",
+    "url": "https://www.genome.gov/11006929/2003-release-international-consortium-completes-hgp"
+   }
+  },
+  {
+   "date": "2007-01-09",
+   "domain": "computing",
+   "weight": 3,
+   "title": "iPhone unveiled",
+   "short": "iPhone",
+   "line": "Introduced at Macworld San Francisco; it went on sale that June.",
+   "source": {
+    "title": "Apple Reinvents the Phone with iPhone",
+    "publisher": "Apple Newsroom",
+    "url": "https://www.apple.com/newsroom/2007/01/09Apple-Reinvents-the-Phone-with-iPhone/"
+   }
+  },
+  {
+   "date": "2012-06-28",
+   "domain": "biology",
+   "weight": 3,
+   "title": "CRISPR-Cas9 shown to be programmable",
+   "short": "CRISPR",
+   "line": "Doudna and Charpentier's teams showed that a guide RNA can direct Cas9 to cut a chosen DNA site.",
+   "source": {
+    "title": "A Programmable Dual-RNA-Guided DNA Endonuclease in Adaptive Bacterial Immunity",
+    "publisher": "Science",
+    "url": "https://www.science.org/doi/10.1126/science.1225829"
+   }
+  },
+  {
+   "date": "2015-12-21",
+   "domain": "space",
+   "weight": 3,
+   "title": "First orbital rocket booster lands",
+   "short": "Reusable rocket",
+   "line": "A Falcon 9 first stage flew back and landed upright after delivering 11 satellites to orbit.",
+   "source": {
+    "title": "Falcon 9 Launches Orbcomm Satellites, Lands First Stage",
+    "publisher": "SpaceNews",
+    "url": "https://spacenews.com/falcon-9-launches-orbcomm-satellites-first-stage-lands/"
+   }
+  },
+  {
+   "date": "2016-02-11",
+   "domain": "physics",
+   "weight": 2,
+   "title": "Gravitational waves detected",
+   "short": "Gravitational waves",
+   "line": "LIGO announced it had detected ripples in spacetime from two merging black holes, a century after Einstein predicted them.",
+   "source": {
+    "title": "Gravitational Waves Detected 100 Years After Einstein's Prediction",
+    "publisher": "LIGO",
+    "url": "https://ligo.org/gravitational-waves-detected-100-years-after-einsteins-general-relativity/"
+   }
+  },
+  {
+   "date": "2019-04-10",
+   "domain": "physics",
+   "weight": 2,
+   "title": "First image of a black hole",
+   "short": "Black hole image",
+   "line": "The Event Horizon Telescope, a planet-sized array of radio dishes, imaged the shadow of M87's black hole.",
+   "source": {
+    "title": "Astronomers Capture First Image of a Black Hole",
+    "publisher": "Event Horizon Telescope",
+    "url": "https://eventhorizontelescope.org/press-release-april-10-2019-astronomers-capture-first-image-black-hole"
+   }
+  },
+  {
+   "date": "2020-11-30",
+   "domain": "ai",
+   "weight": 3,
+   "title": "AlphaFold 2 cracks protein folding",
+   "short": "AlphaFold",
+   "line": "Predicted protein structures to near-experimental accuracy; CASP organizers called the 50-year problem largely solved.",
+   "source": {
+    "title": "AlphaFold: a solution to a 50-year-old grand challenge in biology",
+    "publisher": "Google DeepMind",
+    "url": "https://deepmind.google/blog/alphafold-a-solution-to-a-50-year-old-grand-challenge-in-biology/"
+   }
+  },
+  {
+   "date": "2020-12-02",
+   "domain": "medicine",
+   "weight": 3,
+   "title": "First mRNA vaccine authorized",
+   "short": "mRNA vaccine",
+   "line": "The UK authorized the Pfizer-BioNTech COVID-19 vaccine, under a year after the virus was sequenced. The FDA followed on December 11.",
+   "source": {
+    "title": "UK medicines regulator gives approval for first UK COVID-19 vaccine",
+    "publisher": "GOV.UK / MHRA",
+    "url": "https://www.gov.uk/government/news/uk-medicines-regulator-gives-approval-for-first-uk-covid-19-vaccine"
+   }
+  },
+  {
+   "date": "2021-12-25",
+   "domain": "space",
+   "weight": 2,
+   "title": "James Webb Space Telescope launches",
+   "short": "Webb",
+   "line": "Launched on an Ariane 5 from Kourou, French Guiana.",
+   "source": {
+    "title": "NASA's Webb Telescope Launches",
+    "publisher": "NASA",
+    "url": "https://science.nasa.gov/missions/webb/nasas-webb-telescope-launches-to-see-first-galaxies-distant-worlds/"
+   }
+  },
+  {
+   "date": "2022-12-05",
+   "domain": "energy",
+   "weight": 3,
+   "title": "Fusion ignition achieved",
+   "short": "Fusion ignition",
+   "line": "The National Ignition Facility produced 3.15 MJ of fusion energy from 2.05 MJ of laser energy, the first lab experiment to get more out than went in.",
+   "source": {
+    "title": "DOE National Laboratory Makes History by Achieving Fusion Ignition",
+    "publisher": "U.S. Department of Energy",
+    "url": "https://www.energy.gov/articles/doe-national-laboratory-makes-history-achieving-fusion-ignition"
+   }
+  },
+  {
+   "date": "2023-11-16",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "First CRISPR therapy approved",
+   "short": "CRISPR therapy",
+   "line": "The UK approved Casgevy for sickle-cell disease and beta-thalassemia; the FDA followed on December 8.",
+   "source": {
+    "title": "MHRA authorises world-first gene therapy for sickle-cell disease",
+    "publisher": "GOV.UK / MHRA",
+    "url": "https://www.gov.uk/government/news/mhra-authorises-world-first-gene-therapy-that-aims-to-cure-sickle-cell-disease-and-transfusion-dependent-thalassemia"
+   }
+  },
+  {
+   "date": "2025-05-15",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "First personalized CRISPR therapy",
+   "short": "Bespoke gene edit",
+   "line": "Doctors at CHOP and Penn built a one-off base-editing therapy for a single infant with a rare metabolic disorder.",
+   "source": {
+    "title": "World's First Patient Treated with Personalized CRISPR Gene Editing Therapy",
+    "publisher": "Children's Hospital of Philadelphia",
+    "url": "https://www.chop.edu/news/worlds-first-patient-treated-personalized-crispr-gene-editing-therapy-childrens-hospital"
+   }
+  },
+  {
+   "date": "2026-04-01",
+   "domain": "space",
+   "weight": 3,
+   "title": "Artemis II flies astronauts around the Moon",
+   "short": "Artemis II",
+   "line": "The first crewed lunar flight since 1972 reached 252,756 miles from Earth, the farthest humans have ever traveled.",
+   "source": {
+    "title": "NASA Welcomes Record-Setting Artemis II Moonfarers Back to Earth",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/"
+   }
+  },
+  {
+   "date": "1978-07-25",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "First baby born through IVF",
+   "short": "IVF",
+   "line": "Louise Brown was born in the UK after in vitro fertilization developed by Robert Edwards and Patrick Steptoe.",
+   "source": {
+    "title": "The Nobel Prize in Physiology or Medicine 2010",
+    "publisher": "NobelPrize.org",
+    "url": "https://www.nobelprize.org/prizes/medicine/2010/press-release/"
+   }
+  },
+  {
+   "date": "1980-05-08",
+   "domain": "medicine",
+   "weight": 3,
+   "title": "Smallpox declared eradicated",
+   "short": "Smallpox eradicated",
+   "line": "The World Health Assembly declared smallpox eradicated, the first human disease eliminated worldwide.",
+   "source": {
+    "title": "Commemorating Smallpox Eradication",
+    "publisher": "World Health Organization",
+    "url": "https://www.who.int/news/item/08-05-2020-commemorating-smallpox-eradication-a-legacy-of-hope-for-covid-19-and-other-diseases"
+   }
+  },
+  {
+   "date": "1981-08-12",
+   "domain": "computing",
+   "weight": 3,
+   "title": "IBM Personal Computer announced",
+   "short": "IBM PC",
+   "line": "IBM unveiled the IBM PC in New York. Its design became the template for the personal computer industry.",
+   "source": {
+    "title": "The IBM PC",
+    "publisher": "IBM",
+    "url": "https://www.ibm.com/history/personal-computer"
+   }
+  },
+  {
+   "date": "1983",
+   "domain": "biology",
+   "weight": 2,
+   "title": "PCR invented",
+   "short": "PCR",
+   "line": "Kary Mullis conceived the polymerase chain reaction, a fast way to copy DNA that underpins modern genetics and diagnostics.",
+   "source": {
+    "title": "Kary Mullis dies at age 74",
+    "publisher": "C&EN, American Chemical Society",
+    "url": "https://cen.acs.org/acs-news/Kary-Mullis-dies-age-74/97/web/2019/08"
+   }
+  },
+  {
+   "date": "1995-07-17",
+   "domain": "space",
+   "weight": 2,
+   "title": "GPS fully operational",
+   "short": "GPS",
+   "line": "With 24 satellites in orbit, GPS was declared fully operational, giving positioning anywhere on Earth around the clock.",
+   "source": {
+    "title": "GPS Frequently Asked Questions",
+    "publisher": "U.S. Coast Guard Navigation Center",
+    "url": "https://www.navcen.uscg.gov/gps-frequently-asked-questions"
+   }
+  },
+  {
+   "date": "1995-10-06",
+   "domain": "space",
+   "weight": 2,
+   "title": "First planet found around a Sun-like star",
+   "short": "First exoplanet",
+   "line": "Michel Mayor and Didier Queloz announced 51 Pegasi b. Thousands of exoplanets have been found since.",
+   "source": {
+    "title": "The Nobel Prize in Physics 2019: Popular information",
+    "publisher": "NobelPrize.org",
+    "url": "https://www.nobelprize.org/prizes/physics/2019/popular-information/"
+   }
+  },
+  {
+   "date": "1996-07",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "Combination therapy controls HIV",
+   "short": "HIV therapy",
+   "line": "Researchers at the Vancouver AIDS conference showed that three-drug therapy could suppress HIV, turning a fatal disease into a manageable one.",
+   "source": {
+    "title": "Timeline of the HIV and AIDS Epidemic",
+    "publisher": "HIV.gov",
+    "url": "https://www.hiv.gov/hiv-basics/overview/history/hiv-and-aids-timeline"
+   }
+  },
+  {
+   "date": "1997-05-11",
+   "domain": "ai",
+   "weight": 2,
+   "title": "Deep Blue defeats Garry Kasparov",
+   "short": "Deep Blue",
+   "line": "IBM's chess computer beat the reigning world champion in a six-game match, 3.5 to 2.5.",
+   "source": {
+    "title": "Defeating the World Chess Champion",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/chess/defeating-the-world-chess-champion/"
+   }
+  },
+  {
+   "date": "2006-06-08",
+   "domain": "medicine",
+   "weight": 1,
+   "title": "First HPV vaccine approved",
+   "short": "HPV vaccine",
+   "line": "The FDA approved Gardasil, the first vaccine against the virus types that cause most cervical cancer.",
+   "source": {
+    "title": "Gardasil and Cervarix: An NIH Success Story",
+    "publisher": "National Cancer Institute",
+    "url": "https://techtransfer.cancer.gov/about/success-stories/gardasilcervarix"
+   }
+  },
+  {
+   "date": "2012-07-04",
+   "domain": "physics",
+   "weight": 2,
+   "title": "Higgs boson discovered",
+   "short": "Higgs boson",
+   "line": "CERN's ATLAS and CMS experiments announced a new particle consistent with the Higgs boson, the last undiscovered particle predicted by the Standard Model.",
+   "source": {
+    "title": "CERN experiments observe particle consistent with long-sought Higgs boson",
+    "publisher": "CERN",
+    "url": "https://home.cern/cern-experiments-observe-particle-consistent-with-long-sought-higgs-boson/"
+   }
+  },
+  {
+   "date": "1926-01-26",
+   "domain": "communications",
+   "weight": 2,
+   "title": "First public demonstration of television",
+   "short": "Television",
+   "line": "John Logie Baird showed live moving images to members of the Royal Institution in Soho, London.",
+   "source": {
+    "title": "Experimental television receiver used by JL Baird, 1925-1926",
+    "publisher": "Science Museum Group",
+    "url": "https://collection.sciencemuseumgroup.org.uk/objects/co34789/experimental-television-receiver-used-by-jl-baird-in-demonstration-made-1925-1926"
+   }
+  },
+  {
+   "date": "1926-03-16",
+   "domain": "space",
+   "weight": 2,
+   "title": "First liquid-fuel rocket",
+   "short": "Goddard's rocket",
+   "line": "Robert Goddard launched a gasoline and liquid-oxygen rocket from a farm in Auburn, Massachusetts.",
+   "source": {
+    "title": "95 Years Ago: Goddard's First Liquid-Fueled Rocket",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/history/95-years-ago-goddards-first-liquid-fueled-rocket/"
+   }
+  },
+  {
+   "date": "1928-09",
+   "domain": "medicine",
+   "weight": 3,
+   "title": "Penicillin discovered",
+   "short": "Penicillin",
+   "line": "Alexander Fleming noticed a mould killing the bacteria around it in a London lab dish, and named its active substance penicillin.",
+   "source": {
+    "title": "Alexander Fleming Discovery and Development of Penicillin",
+    "publisher": "American Chemical Society",
+    "url": "https://www.acs.org/education/whatischemistry/landmarks/flemingpenicillin.html"
+   }
+  },
+  {
+   "date": "1938-12",
+   "domain": "physics",
+   "weight": 2,
+   "title": "Nuclear fission discovered",
+   "short": "Fission",
+   "line": "In Berlin, Otto Hahn and Fritz Strassmann found barium after bombarding uranium with neutrons: the nucleus had split.",
+   "source": {
+    "title": "The Discovery of Fission, 1938-1939",
+    "publisher": "U.S. Department of Energy",
+    "url": "https://www.osti.gov/opennet/manhattan-project-history/Events/1890s-1939/discovery_fission.htm"
+   }
+  },
+  {
+   "date": "1942-03-14",
+   "domain": "medicine",
+   "weight": 1,
+   "title": "First US patient saved by penicillin",
+   "short": "Penicillin saves a life",
+   "line": "Anne Miller, near death from infection in New Haven, recovered after penicillin treatment.",
+   "source": {
+    "title": "From Penicillin to Phages: Yale's Century-Long Fight Against Infection",
+    "publisher": "Yale School of Medicine",
+    "url": "https://medicine.yale.edu/news-article/from-penicillin-to-phages-yales-century-long-fight-against-infection/"
+   }
+  },
+  {
+   "date": "1946-02-14",
+   "domain": "computing",
+   "weight": 2,
+   "title": "ENIAC unveiled",
+   "short": "ENIAC",
+   "line": "The University of Pennsylvania announced ENIAC, the first general-purpose electronic computer.",
+   "source": {
+    "title": "Celebrating Penn Engineering History: ENIAC",
+    "publisher": "University of Pennsylvania",
+    "url": "https://www.engineering.upenn.edu/about/history-heritage/eniac/"
+   }
+  },
+  {
+   "date": "1947-12-23",
+   "domain": "computing",
+   "weight": 3,
+   "title": "Transistor demonstrated",
+   "short": "Transistor",
+   "line": "John Bardeen and Walter Brattain showed Bell Labs their point-contact transistor, the first working semiconductor amplifier.",
+   "source": {
+    "title": "1947: Invention of the Point-Contact Transistor",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/siliconengine/invention-of-the-point-contact-transistor/"
+   }
+  },
+  {
+   "date": "1952-05-02",
+   "domain": "transport",
+   "weight": 1,
+   "title": "First jet airliner passenger service",
+   "short": "Jet airliner",
+   "line": "BOAC began the first scheduled jet passenger service with the de Havilland Comet.",
+   "source": {
+    "title": "Comet Enters Service",
+    "publisher": "Royal Air Force Museum",
+    "url": "https://www.rafmuseum.org.uk/research/archive-exhibitions/comet-the-worlds-first-jet-airliner/comet-enters-service/"
+   }
+  },
+  {
+   "date": "1953-04-25",
+   "domain": "biology",
+   "weight": 3,
+   "title": "Structure of DNA published",
+   "short": "DNA double helix",
+   "line": "James Watson and Francis Crick proposed the double helix in a one-page paper in Nature.",
+   "source": {
+    "title": "Molecular Structure of Nucleic Acids",
+    "publisher": "Nature",
+    "url": "https://www.nature.com/articles/171737a0"
+   }
+  },
+  {
+   "date": "1954-06-27",
+   "domain": "energy",
+   "weight": 1,
+   "title": "First nuclear power plant on a grid",
+   "short": "Nuclear power",
+   "line": "The 5 MW Obninsk station near Moscow became the first nuclear plant to supply a power grid.",
+   "source": {
+    "title": "A pioneer of nuclear power (IAEA Bulletin)",
+    "publisher": "International Atomic Energy Agency",
+    "url": "https://www.iaea.org/sites/default/files/26404794246.pdf"
+   }
+  },
+  {
+   "date": "1955-04-12",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "Polio vaccine declared safe and effective",
+   "short": "Polio vaccine",
+   "line": "Field trials in about 1.8 million children showed Jonas Salk's vaccine was safe and effective.",
+   "source": {
+    "title": "1955 Polio Vaccine Trial Announcement",
+    "publisher": "University of Michigan School of Public Health",
+    "url": "https://sph.umich.edu/polio/"
+   }
+  },
+  {
+   "date": "1957-10-04",
+   "domain": "space",
+   "weight": 2,
+   "title": "Sputnik 1 launched",
+   "short": "Sputnik",
+   "line": "The Soviet Union launched the first artificial satellite.",
+   "source": {
+    "title": "65 Years Ago: Sputnik Ushers in the Space Age",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/"
+   }
+  },
+  {
+   "date": "1958-09-12",
+   "domain": "computing",
+   "weight": 2,
+   "title": "First integrated circuit",
+   "short": "Integrated circuit",
+   "line": "At Texas Instruments, Jack Kilby demonstrated a working circuit built on a single piece of germanium.",
+   "source": {
+    "title": "1958: All Semiconductor Solid Circuit is Demonstrated",
+    "publisher": "Computer History Museum",
+    "url": "https://www.computerhistory.org/siliconengine/all-semiconductor-solid-circuit-is-demonstrated/"
+   }
+  },
+  {
+   "date": "1960-05-16",
+   "domain": "physics",
+   "weight": 1,
+   "title": "First working laser",
+   "short": "Laser",
+   "line": "Theodore Maiman operated a flashlamp-pumped ruby laser at Hughes Research Laboratories in Malibu.",
+   "source": {
+    "title": "The Laser",
+    "publisher": "HRL Laboratories",
+    "url": "https://www.hrl.com/about/laser"
+   }
+  },
+  {
+   "date": "1960-06-23",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "First birth control pill approved",
+   "short": "The pill",
+   "line": "The FDA approved Enovid as a contraceptive, the first oral birth control sold in the United States.",
+   "source": {
+    "title": "An Over-the-Counter Contraceptive Is Approved",
+    "publisher": "Journal of General Internal Medicine",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11169152/"
+   }
+  },
+  {
+   "date": "1961-04-12",
+   "domain": "space",
+   "weight": 2,
+   "title": "First human in space",
+   "short": "Gagarin",
+   "line": "Yuri Gagarin made one orbit of Earth aboard Vostok 1.",
+   "source": {
+    "title": "The flight of Vostok 1",
+    "publisher": "European Space Agency",
+    "url": "https://www.esa.int/About_Us/ESA_history/50_years_of_humans_in_space/The_flight_of_Vostok_1"
+   }
+  },
+  {
+   "date": "1967-12-03",
+   "domain": "medicine",
+   "weight": 1,
+   "title": "First human heart transplant",
+   "short": "Heart transplant",
+   "line": "Christiaan Barnard's team in Cape Town transplanted a heart into Louis Washkansky, who lived 18 days.",
+   "source": {
+    "title": "50th anniversary of the first human heart transplant",
+    "publisher": "University of Cape Town",
+    "url": "https://www.news.uct.ac.za/article/-2017-11-29-50th-anniversary-of-the-first-human-heart-transplant"
+   }
+  },
+  {
+   "date": "1969-07-20",
+   "domain": "space",
+   "weight": 3,
+   "title": "Apollo 11 lands on the Moon",
+   "short": "Moon landing",
+   "line": "Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.",
+   "source": {
+    "title": "Apollo 11",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/mission/apollo-11/"
+   }
+  },
+  {
+   "date": "1969-10-29",
+   "domain": "computing",
+   "weight": 2,
+   "title": "First ARPANET message",
+   "short": "ARPANET",
+   "line": "UCLA sent the first message over ARPANET, the internet's precursor, to SRI. It crashed after two letters.",
+   "source": {
+    "title": "The Day the Infant Internet Uttered its First Words",
+    "publisher": "UCLA",
+    "url": "https://www.lk.cs.ucla.edu/internet_first_words.html"
+   }
+  },
+  {
+   "date": "1970",
+   "domain": "agriculture",
+   "weight": 2,
+   "title": "Nobel Prize for the Green Revolution",
+   "short": "Green Revolution",
+   "line": "Norman Borlaug was honored for high-yield wheat that sharply raised grain output in Mexico, India and Pakistan.",
+   "source": {
+    "title": "Norman Borlaug: Facts",
+    "publisher": "NobelPrize.org",
+    "url": "https://www.nobelprize.org/prizes/peace/1970/borlaug/facts/"
+   }
+  },
+  {
+   "date": "1971-11-15",
+   "domain": "computing",
+   "weight": 2,
+   "title": "First commercial microprocessor",
+   "short": "Intel 4004",
+   "line": "Intel announced the 4004, a programmable chip with about 2,300 transistors built for a calculator maker.",
+   "source": {
+    "title": "The First Programmable Microprocessor: The 4004",
+    "publisher": "Intel",
+    "url": "https://timeline.intel.com/1971/the-first-programmable-microprocessor:-the-4004"
+   }
+  },
+  {
+   "date": "2019-04-03",
+   "domain": "communications",
+   "weight": 1,
+   "title": "First commercial 5G networks",
+   "short": "5G",
+   "line": "Carriers in South Korea launched 5G smartphone service; Verizon switched on 5G in two US cities the same day.",
+   "source": {
+    "title": "SK Telecom on the first anniversary of 5G launch",
+    "publisher": "SK Telecom",
+    "url": "https://news.sktelecom.com/en/1320"
+   }
+  },
+  {
+   "date": "2019-05-24",
+   "domain": "space",
+   "weight": 2,
+   "title": "First Starlink satellites launched",
+   "short": "Starlink",
+   "line": "A Falcon 9 carried SpaceX's first 60 Starlink satellites, starting the largest satellite constellation ever built.",
+   "source": {
+    "title": "SpaceX's first 60 Starlink broadband satellites deployed in orbit",
+    "publisher": "Spaceflight Now",
+    "url": "https://spaceflightnow.com/2019/05/24/spacexs-first-60-starlink-broadband-satellites-deployed-in-orbit/"
+   }
+  },
+  {
+   "date": "2020-10-08",
+   "domain": "transport",
+   "weight": 2,
+   "title": "Driverless robotaxis open to the public",
+   "short": "Robotaxis",
+   "line": "Waymo opened rides with no safety driver to public riders in the Phoenix suburbs.",
+   "source": {
+    "title": "Waymo is opening its fully driverless service to the general public in Phoenix",
+    "publisher": "Waymo",
+    "url": "https://waymo.com/blog/2020/10/waymo-is-opening-its-fully-driverless-service-in-phoenix/"
+   }
+  },
+  {
+   "date": "2021-06-04",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "Wegovy approved for weight management",
+   "short": "GLP-1 drugs",
+   "line": "The FDA approved weekly semaglutide for chronic weight management, the first new obesity drug approval since 2014.",
+   "source": {
+    "title": "Wegovy approval letter, NDA 215256",
+    "publisher": "U.S. FDA",
+    "url": "https://www.accessdata.fda.gov/drugsatfda_docs/appletter/2021/215256Orig1s000ltr.pdf"
+   }
+  },
+  {
+   "date": "2021-10-06",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "First malaria vaccine recommended",
+   "short": "Malaria vaccine",
+   "line": "The WHO recommended the RTS,S vaccine for children in regions with moderate to high malaria transmission.",
+   "source": {
+    "title": "WHO recommends groundbreaking malaria vaccine for children at risk",
+    "publisher": "World Health Organization",
+    "url": "https://www.who.int/news/item/06-10-2021-who-recommends-groundbreaking-malaria-vaccine-for-children-at-risk"
+   }
+  },
+  {
+   "date": "2022-01-07",
+   "domain": "medicine",
+   "weight": 1,
+   "title": "Pig heart transplanted into a living person",
+   "short": "Pig heart transplant",
+   "line": "University of Maryland surgeons transplanted a genetically modified pig heart into a man with terminal heart disease.",
+   "source": {
+    "title": "First successful transplant of porcine heart into adult human",
+    "publisher": "University of Maryland School of Medicine",
+    "url": "https://www.medschool.umaryland.edu/news/2022/university-of-maryland-school-of-medicine-faculty-scientists-and-clinicians-perform-historic-first-successful-transplant-of-porcine-heart-into-adult-human-with-end-stage-heart-disease.html"
+   }
+  },
+  {
+   "date": "2022-09-26",
+   "domain": "space",
+   "weight": 2,
+   "title": "First test of asteroid deflection",
+   "short": "DART",
+   "line": "NASA's DART spacecraft struck the asteroid moonlet Dimorphos and shortened its orbit by 32 minutes.",
+   "source": {
+    "title": "NASA's DART Mission Hits Asteroid in First-Ever Planetary Defense Test",
+    "publisher": "NASA",
+    "url": "https://www.nasa.gov/news-release/nasas-dart-mission-hits-asteroid-in-first-ever-planetary-defense-test/"
+   }
+  },
+  {
+   "date": "2024-01",
+   "domain": "medicine",
+   "weight": 1,
+   "title": "First Neuralink brain implant in a person",
+   "short": "Brain implant",
+   "line": "Neuralink implanted its N1 brain-computer interface in the first participant of its PRIME study.",
+   "source": {
+    "title": "PRIME Study Progress Update",
+    "publisher": "Neuralink",
+    "url": "https://neuralink.com/updates/prime-study-progress-update/"
+   }
+  },
+  {
+   "date": "2025-06-18",
+   "domain": "medicine",
+   "weight": 2,
+   "title": "Twice-yearly HIV prevention approved",
+   "short": "HIV prevention",
+   "line": "The FDA approved lenacapavir, an injection given every six months that prevents HIV infection.",
+   "source": {
+    "title": "Yeztugo is the first FDA-approved HIV prevention option offering 6 months of protection",
+    "publisher": "Gilead Sciences",
+    "url": "https://investors.gilead.com/news/news-details/2025/Yeztugo-Lenacapavir-Is-Now-the-First-and-Only-FDA-Approved-HIV-Prevention-Option-Offering-6-Months-of-Protection/default.aspx"
+   }
+  },
+  {
+   "date": "2026-06-30",
+   "domain": "communications",
+   "weight": 2,
+   "title": "Starlink reaches 12 million subscribers",
+   "short": "Starlink 12M",
+   "line": "SpaceX reported 12.0 million Starlink subscriber lines, double the 6.0 million a year earlier.",
+   "source": {
+    "title": "SpaceX Form 10-Q, quarter ended June 30, 2026",
+    "publisher": "U.S. SEC",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001181412/000162828026052535/spcx-20260630.htm"
+   }
+  }
+ ],
+ "domains": [
+  {
+   "id": "computing",
+   "label": "Computing"
+  },
+  {
+   "id": "ai",
+   "label": "AI"
+  },
+  {
+   "id": "biology",
+   "label": "Biology"
+  },
+  {
+   "id": "medicine",
+   "label": "Medicine"
+  },
+  {
+   "id": "space",
+   "label": "Space"
+  },
+  {
+   "id": "physics",
+   "label": "Physics"
+  },
+  {
+   "id": "energy",
+   "label": "Energy"
+  },
+  {
+   "id": "communications",
+   "label": "Communications"
+  },
+  {
+   "id": "transport",
+   "label": "Transport"
+  },
+  {
+   "id": "agriculture",
+   "label": "Agriculture"
+  }
+ ],
+ "honest": [
+  {
+   "title": "Faster adoption builds on existing networks",
+   "body": "ChatGPT reached 100 million people quickly partly because about 5 billion were already online. The telephone needed a copper line to every house. Time to 100 million measures distribution as much as invention."
+  },
+  {
+   "title": "Adoption figures use different yardsticks",
+   "body": "Subscriptions, accounts, installs and monthly users are not the same thing, and several figures are third-party estimates. Read each line as order-of-magnitude evidence. The table under the chart lists every measure and source."
+  },
+  {
+   "title": "Exponential is not the same as accelerating",
+   "body": "Transistor counts and solar prices change at a near-constant rate, a straight line on the log scale. That is fast, but the rate is not rising. AI training compute is the clear case where the rate itself rose, from doubling every 20 months to every 6."
+  },
+  {
+   "title": "Recent figures are the least certain",
+   "body": "Most frontier AI compute values after 2023 are Epoch AI estimates, not disclosures. The newest chips are multi-die packages. NHGRI's genome series ends in 2022. Each data table notes these cases."
+  },
+  {
+   "title": "The milestones are a selection, not a measurement",
+   "body": "The milestone list is chosen for context, with a source for every entry. Its spacing proves nothing; a different curator would choose differently. The argument rests on the charts."
+  },
+  {
+   "title": "Faster is not the same as bigger",
+   "body": "Economist Robert Gordon argues that inventions of 1870 to 1970, such as electricity, indoor plumbing, cars and antibiotics, raised living standards on a scale that cannot be repeated, and that growth slowed after 1970. This page measures how fast things spread, not how much they changed daily life.",
+   "source": {
+    "title": "The Rise and Fall of American Growth",
+    "publisher": "Princeton University Press",
+    "url": "https://press.princeton.edu/books/hardcover/9780691147727/the-rise-and-fall-of-american-growth"
+   }
+  }
+ ]
+}
